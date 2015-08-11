@@ -11,20 +11,28 @@
     <link rel="stylesheet" href="sass/normalize.css">
     <link rel="stylesheet" href="sass/style.css">
     <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </head>
 
   <body>
 
     <nav class="navbar">
       <div class="navbar-wrapper">
-        <div class="navbar-btn"> <a href="#">Home</a> </div>
-        <div class="navbar-btn"> <a href="/blog/">Blog</a> </div>
+        <div class="contact navbar-btn"><a href="#"><i class="fa fa-home"></i></a></div>
         <div class="navbar-btn"> <a href="#">About</a> </div>
         <div class="navbar-btn"> <a href="#">Portfolio</a></div>
         <div class="navbar-btn"> <a href="#">Resume</a></div>
-
+        <div class="navbar-btn"> <a href="/blog/">Blog</a> </div>
+        <div class="social-wrapper">
+          <div class="navbar-btn github-icon">
+            <a href="https://github.com/DavidAshenfelder"><i class="fa fa-github"></i></a>
+          </div>
+          <div class="navbar-btn linkd-in-icon">
+            <a href="https://www.linkedin.com/pub/david-ashenfelder/69/aa7/26"><i class="fa fa-linkedin"></i></i></a>
+          </div>
+        </div>
       </div>
+
     </nav>
 
     <div class="home-page-wrapper">
@@ -46,7 +54,12 @@
         <aside class="about-me-info">
           <h1>About Me</h1>
         </aside>
-        <div class="about-me-photo"></div>
+        <div class="about-me-photo">
+          <div class="photo-text-wrapper">
+            <h1><i class="fa fa-wrench"></i></h1>
+            <h1>Building a Purpose</h1>
+          </div>
+        </div>
       </div>
 
       <div class="portfolio-wrapper">
@@ -71,8 +84,32 @@
             <aside class="battle-ballot-pic"></aside>
           </div>
         </aside>
-        <div class="portfolio-photo"></div>
+        <div class="portfolio-photo">
+          <div class="photo-text-wrapper">
+            <h1><i class="fa fa-briefcase"></i></h1>
+            <h1>My bag of Tricks</h1>
+            <h5>HTML5 + CSS3 + SASS | JAVASCRIPT + JQUERY + ANGULAR.JS + UNDERSCORE.JS | BOWER + GRUNT + NPM | GIT</h5>
+          </div>
+        </div>
       </div>
+
+      <div class="experience-wrapper">
+        <aside class="experience-info">
+          <h1>Experience</h1>
+
+        </aside>
+        <div class="experience-photo">
+        <div class="photo-text-wrapper">
+          <h1><i class="fa fa-certificate"></i></h1>
+          <h1>I got that...</h1>
+        </div>
+        </div>
+
+      </div>
+
     </div>
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

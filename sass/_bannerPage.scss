@@ -6,7 +6,6 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  border-bottom: 2px solid $tan;
         h2 {
           text-align: center;
           color: $orange-font;
@@ -19,12 +18,17 @@
           a h2 {
             font-family: 'Josefin Slab', serif;
             text-align: center;
-            color: $orange-font;
+            color: $light-grey;
             width: 25%;
             display: inline-block;
+            text-decoration: underline;
+            &:hover {
+              color: $light-orange
+            }
           }
         }
         .name {
+          color: $tan;
           margin: 1%;
           font-size: 4vmax;
         }

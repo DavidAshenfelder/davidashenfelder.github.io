@@ -1,14 +1,34 @@
+.photo-text-wrapper{
+  text-align: center;
+  h1 {
+    color: $light-grey;
+    font-size: 10vmax;
+    margin: 0;
+  }
+  h5 {
+    color: $orange-font;
+    font-size: 2.5vmax;
+    margin: 0;
+  }
+}
+
+.contact {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+
 
 .about-me-wrapper {
   font-family: 'Josefin Slab', serif;
   width: 100%;
   height: 700px;
-  border-bottom: 2px solid $tan;
   .about-me-info {
-    width: 60%;
+    width: 50%;
     float: left;
     h1 {
-      background-color: $tan;
+      background-color: $light-grey;
+      color: $grey-font;
       text-align: center;
       width: 100%;
       margin: 0;
@@ -16,16 +36,18 @@
   }
 
   .about-me-photo {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/ProfilePic.JPG) no-repeat no-repeat fixed;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Boards-Ready-to-Dry.jpg) no-repeat no-repeat fixed;
     height: 700px;
-    width: 40%;
+    width: 50%;
     float: right;
-    background-position: 550px 0px ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    border-left: 2px solid $tan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     /*   -webkit-filter: blur(3px);
     -moz-filter: blur(3px);
     -o-filter: blur(3px);
@@ -39,11 +61,12 @@
   width: 100%;
   height: 700px;
   .portfolio-info {
-    width: 60%;
+    width: 50%;
     height: 100%;
     float: right;
     h1 {
-      background-color: $tan;
+      background-color: $light-grey;
+      color: $grey-font;
       text-align: center;
       width: 100%;
       margin: 0
@@ -53,11 +76,15 @@
   .portfolio-photo {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/stacked_wood.jpg) no-repeat no-repeat fixed;
     height: 700px;
-    width: 40%;
+    width: 50%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -97,5 +124,42 @@
   }
   .battle-ballot-pic {
 
+  }
+}
+
+.experience-wrapper {
+  font-family: 'Josefin Slab', serif;
+  width: 100%;
+  height: 700px;
+  .experience-info {
+    width: 50%;
+    float: left;
+    h1 {
+      background-color: $light-grey;
+      color: $grey-font;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .experience-photo {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/pile-of-reclaimed-wood.jpg) no-repeat no-repeat fixed;
+    height: 700px;
+    width: 50%;
+    float: right;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*   -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px); */
   }
 }
