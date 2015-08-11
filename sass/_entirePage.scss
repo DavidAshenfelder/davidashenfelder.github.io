@@ -1,0 +1,63 @@
+
+.about-me-wrapper {
+  width: 100%;
+  height: 700px;
+  border-bottom: 2px solid $tan;
+  .about-me-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    float: left;
+    h3 {
+      background-color: $tan;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .about-me-photo {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/pile-of-reclaimed-wood.jpg) no-repeat no-repeat fixed;
+    height: 700px;
+    width: 40%;
+    float: right;
+    background-position: 550px 0px ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-left: 2px solid $tan;
+    /*   -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px); */
+  }
+}
+
+.portfolio-wrapper {
+  width: 100%;
+  height: 700px;
+  .portfolio-info {
+    background-color: $tan;
+    width: 60%;
+    height: 100%;
+    float: right;
+    h3 {
+      text-align: center;
+      width: 100%;
+      margin: 0
+    }
+  }
+
+  .portfolio-photo {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/stacked_wood.jpg) no-repeat no-repeat fixed;
+    height: 700px;
+    width: 40%;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+}

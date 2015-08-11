@@ -1,0 +1,24 @@
+$orange-font: #BB6B0C;
+$light-orange: #FF9828;
+$grey-font: #B5B1AC;
+$background-color: #595959;
+$dark-teal: #0081B2;
+$light-teal: #28C4FF;
+$tan: #C3AC91;
+
+@import "entirePage.scss";
+@import "navbar.scss";
+@import "bannerPage.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: $background-color;
+}
+
+body {
+  margin: 0;
+  background-color: $background-color;
+}
