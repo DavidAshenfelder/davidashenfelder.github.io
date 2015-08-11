@@ -1,20 +1,18 @@
 .about-me-wrapper {
+  font-family: 'Josefin Slab', serif;
   width: 100%;
   height: 700px;
   border-bottom: 2px solid #C3AC91; }
   .about-me-wrapper .about-me-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 60%;
     float: left; }
-    .about-me-wrapper .about-me-info h3 {
+    .about-me-wrapper .about-me-info h1 {
       background-color: #C3AC91;
       text-align: center;
       width: 100%;
       margin: 0; }
   .about-me-wrapper .about-me-photo {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/pile-of-reclaimed-wood.jpg) no-repeat no-repeat fixed;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/ProfilePic.JPG) no-repeat no-repeat fixed;
     height: 700px;
     width: 40%;
     float: right;
@@ -31,14 +29,15 @@
     filter: blur(3px); */ }
 
 .portfolio-wrapper {
+  font-family: 'Josefin Slab', serif;
   width: 100%;
   height: 700px; }
   .portfolio-wrapper .portfolio-info {
-    background-color: #C3AC91;
     width: 60%;
     height: 100%;
     float: right; }
-    .portfolio-wrapper .portfolio-info h3 {
+    .portfolio-wrapper .portfolio-info h1 {
+      background-color: #C3AC91;
       text-align: center;
       width: 100%;
       margin: 0; }
@@ -51,6 +50,21 @@
     -o-background-size: cover;
     background-size: cover; }
 
+.truckster-wrapper {
+  height: 30%;
+  background-color: #00DFFC;
+  margin: 1%; }
+
+.bars-and-stripes-wrapper {
+  height: 30%;
+  background-color: #002566;
+  margin: 1%; }
+
+.battle-ballot-wrapper {
+  height: 30%;
+  background-color: #2779AA;
+  margin: 1%; }
+
 .navbar {
   border-bottom: 2px solid #C3AC91;
   z-index: 100;
@@ -62,7 +76,9 @@
   background-color: #595959;
   color: #BB6B0C;
   border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px; }
+  border-bottom-right-radius: 10px;
+  opacity: .9;
+  font-family: 'Josefin Slab', serif; }
   .navbar .navbar-wrapper {
     width: 80%;
     text-align: center;
@@ -95,9 +111,25 @@
   -o-background-size: cover;
   background-size: cover;
   border-bottom: 2px solid #C3AC91; }
-  .banner h2, .banner a {
+  .banner h2 {
     text-align: center;
-    color: #BB6B0C; }
+    color: #BB6B0C;
+    font-family: 'Josefin Slab', serif; }
+  .banner .contact-wrapper {
+    width: 100%;
+    text-align: center; }
+    .banner .contact-wrapper a h2 {
+      font-family: 'Josefin Slab', serif;
+      text-align: center;
+      color: #BB6B0C;
+      width: 25%;
+      display: inline-block; }
+  .banner .name {
+    margin: 1%;
+    font-size: 4vmax; }
+  .banner .self-title {
+    margin: 0;
+    font-size: 3vmax; }
 
 .banner-wrapper {
   margin-top: 140px;

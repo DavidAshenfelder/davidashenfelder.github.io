@@ -7,9 +7,30 @@
   -o-background-size: cover;
   background-size: cover;
   border-bottom: 2px solid $tan;
-        h2, a {
+        h2 {
           text-align: center;
           color: $orange-font;
+          font-family: 'Josefin Slab', serif;
+        }
+
+        .contact-wrapper {
+          width: 100%;
+          text-align: center;
+          a h2 {
+            font-family: 'Josefin Slab', serif;
+            text-align: center;
+            color: $orange-font;
+            width: 25%;
+            display: inline-block;
+          }
+        }
+        .name {
+          margin: 1%;
+          font-size: 4vmax;
+        }
+        .self-title {
+          margin: 0;
+          font-size: 3vmax;
         }
       }
 
