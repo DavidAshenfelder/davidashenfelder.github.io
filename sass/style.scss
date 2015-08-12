@@ -25,18 +25,36 @@ body {
 }
 
 @media (max-width: 600px) {
+body {
+}
+.banner{
+  background: $background-color;
+  .contact-wrapper {
+    a h2 {
+      width: 100%;
+      font-size: 4vmax;
+    }
+  }
+.banner-wrapper {
+
+}
+}
 
 .about-me-wrapper {
   .about-me-info {
     width: 100%;
     height: 300px;
     float: none;
+    transition: all 2s;
+
   }
   .about-me-photo {
     width: 100%;
     min-height: 300px;
     float: none;
     background: $grey-font;
+    transition: all 2s;
+
   }
 }
 .portfolio-wrapper {
@@ -44,12 +62,16 @@ body {
     width: 100%;
     height: 300px;
     float: none;
+    transition: all 2s;
+
   }
   .portfolio-photo {
     width: 100%;
     min-height: 300px;
     float: none;
     background: $grey-font;
+    transition: all 2s;
+
   }
 }
 .experience-wrapper {
@@ -57,12 +79,15 @@ body {
     width: 100%;
     height: 300px;
     float: none;
+    transition: all 2s;
+
   }
   .experience-photo {
     width: 100%;
     min-height: 300px;
     float: none;
     background: $grey-font;
+    transition: all 2s;
   }
 }
 }

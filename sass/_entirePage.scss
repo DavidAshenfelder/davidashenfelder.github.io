@@ -23,15 +23,21 @@
   font-family: 'Josefin Slab', serif;
   width: 100%;
   min-height: 700px;
+  transition: all 2s;
+
   .about-me-info {
     width: 50%;
     float: left;
+    transition: all 2s;
+
     h1 {
       background-color: $light-grey;
       color: $grey-font;
       text-align: center;
       width: 100%;
       margin: 0;
+      transition: all 2s;
+
     }
   }
 
@@ -57,6 +63,8 @@
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+            transition: all 2s;
+
   }
 }
 
@@ -64,16 +72,22 @@
   font-family: 'Josefin Slab', serif;
   width: 100%;
   min-height: 700px;
+  transition: all 2s;
+
   .portfolio-info {
     width: 50%;
     height: 100%;
     float: right;
+    transition: all 2s;
+
     h1 {
       background-color: $light-grey;
       color: $grey-font;
       text-align: center;
       width: 100%;
       margin: 0;
+      transition: all 2s;
+
     }
   }
 
@@ -99,6 +113,8 @@
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+            transition: all 2s;
+
   }
 }
 
@@ -106,6 +122,8 @@
   height: 30%;
   background-color: #00DFFC;
   margin: 1%;
+  transition: all 2s;
+
 
   .truckster-info {
 
@@ -119,6 +137,8 @@
   height: 30%;
   background-color: #002566;
   margin: 1%;
+  transition: all 2s;
+
 
   .bars-and-stripes-info {
 
@@ -132,6 +152,8 @@
   height: 30%;
   background-color: #2779AA;
   margin: 1%;
+  transition: all 2s;
+
 
   .battle-ballot-info {
 
@@ -145,9 +167,13 @@
   font-family: 'Josefin Slab', serif;
   width: 100%;
   min-height: 700px;
+  transition: all 2s;
+
   .experience-info {
     width: 50%;
     float: left;
+    transition: all 2s;
+
     h1 {
       background-color: $light-grey;
       color: $grey-font;
@@ -179,5 +205,7 @@
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+            transition: all 2s;
+
   }
 }

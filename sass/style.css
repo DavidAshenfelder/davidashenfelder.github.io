@@ -17,16 +17,19 @@
 .about-me-wrapper {
   font-family: 'Josefin Slab', serif;
   width: 100%;
-  min-height: 700px; }
+  min-height: 700px;
+  transition: all 2s; }
   .about-me-wrapper .about-me-info {
     width: 50%;
-    float: left; }
+    float: left;
+    transition: all 2s; }
     .about-me-wrapper .about-me-info h1 {
       background-color: #6D6B69;
       color: #B5B1AC;
       text-align: center;
       width: 100%;
-      margin: 0; }
+      margin: 0;
+      transition: all 2s; }
   .about-me-wrapper .about-me-photo {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Boards-Ready-to-Dry.jpg) no-repeat no-repeat fixed;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Boards-Ready-to-Dry.jpg) no-repeat no-repeat fixed;
@@ -48,22 +51,26 @@
     align-items: center;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    transition: all 2s; }
 
 .portfolio-wrapper {
   font-family: 'Josefin Slab', serif;
   width: 100%;
-  min-height: 700px; }
+  min-height: 700px;
+  transition: all 2s; }
   .portfolio-wrapper .portfolio-info {
     width: 50%;
     height: 100%;
-    float: right; }
+    float: right;
+    transition: all 2s; }
     .portfolio-wrapper .portfolio-info h1 {
       background-color: #6D6B69;
       color: #B5B1AC;
       text-align: center;
       width: 100%;
-      margin: 0; }
+      margin: 0;
+      transition: all 2s; }
   .portfolio-wrapper .portfolio-photo {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/stacked_wood.jpg) no-repeat no-repeat fixed;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/stacked_wood.jpg) no-repeat no-repeat fixed;
@@ -85,30 +92,36 @@
     align-items: center;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    transition: all 2s; }
 
 .truckster-wrapper {
   height: 30%;
   background-color: #00DFFC;
-  margin: 1%; }
+  margin: 1%;
+  transition: all 2s; }
 
 .bars-and-stripes-wrapper {
   height: 30%;
   background-color: #002566;
-  margin: 1%; }
+  margin: 1%;
+  transition: all 2s; }
 
 .battle-ballot-wrapper {
   height: 30%;
   background-color: #2779AA;
-  margin: 1%; }
+  margin: 1%;
+  transition: all 2s; }
 
 .experience-wrapper {
   font-family: 'Josefin Slab', serif;
   width: 100%;
-  min-height: 700px; }
+  min-height: 700px;
+  transition: all 2s; }
   .experience-wrapper .experience-info {
     width: 50%;
-    float: left; }
+    float: left;
+    transition: all 2s; }
     .experience-wrapper .experience-info h1 {
       background-color: #6D6B69;
       color: #B5B1AC;
@@ -136,7 +149,8 @@
     align-items: center;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    transition: all 2s; }
 
 .navbar {
   box-shadow: 2px 2px 2px #C3AC91;
@@ -244,34 +258,46 @@ body {
   background-color: #595959; }
 
 @media (max-width: 600px) {
+  .banner {
+    background: #595959; }
+    .banner .contact-wrapper a h2 {
+      width: 100%;
+      font-size: 4vmax; }
+
   .about-me-wrapper .about-me-info {
     width: 100%;
     height: 300px;
-    float: none; }
+    float: none;
+    transition: all 2s; }
   .about-me-wrapper .about-me-photo {
     width: 100%;
     min-height: 300px;
     float: none;
-    background: #B5B1AC; }
+    background: #B5B1AC;
+    transition: all 2s; }
 
   .portfolio-wrapper .portfolio-info {
     width: 100%;
     height: 300px;
-    float: none; }
+    float: none;
+    transition: all 2s; }
   .portfolio-wrapper .portfolio-photo {
     width: 100%;
     min-height: 300px;
     float: none;
-    background: #B5B1AC; }
+    background: #B5B1AC;
+    transition: all 2s; }
 
   .experience-wrapper .experience-info {
     width: 100%;
     height: 300px;
-    float: none; }
+    float: none;
+    transition: all 2s; }
   .experience-wrapper .experience-photo {
     width: 100%;
     min-height: 300px;
     float: none;
-    background: #B5B1AC; } }
+    background: #B5B1AC;
+    transition: all 2s; } }
 
 /*# sourceMappingURL=style.css.map */
