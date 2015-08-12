@@ -303,7 +303,8 @@
     transition: all 2s; }
 
   .project-wrapper {
-    height: 400px; }
+    height: 400px;
+    padding: 1%; }
     .project-wrapper .project-info {
       width: 100%; }
       .project-wrapper .project-info h3, .project-wrapper .project-info p {
@@ -316,9 +317,11 @@
       display: flex;
       justify-content: center;
       align-items: center; }
+      .project-wrapper .project-pic a {
+        width: 90%; }
       .project-wrapper .project-pic img {
         border: 2px solid #595959;
-        width: 90%; }
+        width: 100%; }
 
   .experience-wrapper .experience-info {
     width: 100%;

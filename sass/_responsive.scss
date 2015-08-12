@@ -75,6 +75,7 @@
 
 .project-wrapper {
   height: 400px;
+  padding: 1%;
   .project-info {
     width: 100%;
     h3, p {
@@ -89,9 +90,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    img {
-      border: 2px solid $background-color;
+    a {
       width: 90%;
+    }
+     img {
+      border: 2px solid $background-color;
+      width: 100%;
     }
   }
 }
