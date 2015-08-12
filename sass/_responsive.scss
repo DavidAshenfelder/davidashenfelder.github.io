@@ -1,0 +1,95 @@
+
+@media (max-width: 1250px) {
+  .banner{
+    .contact-wrapper {
+      a h2 {
+        margin: 5px;
+        width: 100%;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .portfolio-wrapper {
+    height: auto;
+    .portfolio-info {
+      width: 100%;
+      height: auto;
+      float: none;
+      transition: all 2s;
+    }
+    .portfolio-photo {
+      width: 100%;
+      min-height: 300px;
+      float: none;
+      transition: all 2s;
+
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+.banner{
+  background: $background-color;
+  transition: all 2s;
+
+  .contact-wrapper {
+    a h2 {
+      width: 100%;
+      font-size: 4vmax;
+      transition: all 2s;
+    }
+  }
+  .banner-wrapper {
+    border-top: 2px solid $tan;
+    border-bottom: 2px solid $tan;
+    margin-top: 90px;
+    transition: all 2s;
+
+    .banner-pic {
+      border: none;
+      border-radius: 0;
+      transition: all 2s;
+
+    }
+  }
+}
+
+.about-me-wrapper {
+  .about-me-info {
+    width: 100%;
+    height: 300px;
+    float: none;
+    transition: all 2s;
+
+  }
+  .about-me-photo {
+    width: 100%;
+    min-height: 300px;
+    float: none;
+    background: $grey-font;
+    transition: all 2s;
+
+  }
+}
+
+.experience-wrapper {
+  .experience-info {
+    width: 100%;
+    height: 300px;
+    float: none;
+    transition: all 2s;
+
+  }
+  .experience-photo {
+    width: 100%;
+    min-height: 300px;
+    float: none;
+    background: $grey-font;
+    transition: all 2s;
+  }
+}
+}

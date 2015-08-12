@@ -71,12 +71,11 @@
 .portfolio-wrapper {
   font-family: 'Josefin Slab', serif;
   width: 100%;
-  min-height: 700px;
+  height: 700px;
   transition: all 2s;
 
   .portfolio-info {
     width: 50%;
-    height: 100%;
     float: right;
     transition: all 2s;
 
@@ -118,48 +117,32 @@
   }
 }
 
-.truckster-wrapper {
-  height: 30%;
-  background-color: #00DFFC;
+.project-wrapper {
+  height: 200px;
+  background-color: $grey-font;
   margin: 1%;
   transition: all 2s;
 
 
-  .truckster-info {
-
+  .project-info {
+    float: right;
+    width: 49%;
+    h3, p {
+      width: 90%;
+    }
   }
-  .truckster-pic {
-
-  }
-}
-
-.bars-and-stripes-wrapper {
-  height: 30%;
-  background-color: #002566;
-  margin: 1%;
-  transition: all 2s;
-
-
-  .bars-and-stripes-info {
-
-  }
-  .bars-and-stripes-pic {
-
-  }
-}
-
-.battle-ballot-wrapper {
-  height: 30%;
-  background-color: #2779AA;
-  margin: 1%;
-  transition: all 2s;
-
-
-  .battle-ballot-info {
-
-  }
-  .battle-ballot-pic {
-
+  .project-pic {
+    float: left;
+    width: 49%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      border: 2px solid $background-color;
+      width: 250px;
+      height: 150px;
+    }
   }
 }
 

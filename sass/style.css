@@ -57,11 +57,10 @@
 .portfolio-wrapper {
   font-family: 'Josefin Slab', serif;
   width: 100%;
-  min-height: 700px;
+  height: 700px;
   transition: all 2s; }
   .portfolio-wrapper .portfolio-info {
     width: 50%;
-    height: 100%;
     float: right;
     transition: all 2s; }
     .portfolio-wrapper .portfolio-info h1 {
@@ -95,23 +94,27 @@
     flex-wrap: wrap;
     transition: all 2s; }
 
-.truckster-wrapper {
-  height: 30%;
-  background-color: #00DFFC;
+.project-wrapper {
+  height: 200px;
+  background-color: #B5B1AC;
   margin: 1%;
   transition: all 2s; }
-
-.bars-and-stripes-wrapper {
-  height: 30%;
-  background-color: #002566;
-  margin: 1%;
-  transition: all 2s; }
-
-.battle-ballot-wrapper {
-  height: 30%;
-  background-color: #2779AA;
-  margin: 1%;
-  transition: all 2s; }
+  .project-wrapper .project-info {
+    float: right;
+    width: 49%; }
+    .project-wrapper .project-info h3, .project-wrapper .project-info p {
+      width: 90%; }
+  .project-wrapper .project-pic {
+    float: left;
+    width: 49%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .project-wrapper .project-pic img {
+      border: 2px solid #595959;
+      width: 250px;
+      height: 150px; }
 
 .experience-wrapper {
   font-family: 'Josefin Slab', serif;
@@ -249,16 +252,24 @@
     border-radius: 100%;
     border: 2px solid #C3AC91; }
 
-* {
-  box-sizing: border-box; }
-
-html {
-  background-color: #595959; }
-
-body {
-  margin: 0;
-  background-color: #595959; }
-
+@media (max-width: 1250px) {
+  .banner .contact-wrapper a h2 {
+    margin: 5px;
+    width: 100%;
+    font-size: 24px; } }
+@media (max-width: 1050px) {
+  .portfolio-wrapper {
+    height: auto; }
+    .portfolio-wrapper .portfolio-info {
+      width: 100%;
+      height: auto;
+      float: none;
+      transition: all 2s; }
+    .portfolio-wrapper .portfolio-photo {
+      width: 100%;
+      min-height: 300px;
+      float: none;
+      transition: all 2s; } }
 @media (max-width: 600px) {
   .banner {
     background: #595959;
@@ -289,18 +300,6 @@ body {
     background: #B5B1AC;
     transition: all 2s; }
 
-  .portfolio-wrapper .portfolio-info {
-    width: 100%;
-    height: 300px;
-    float: none;
-    transition: all 2s; }
-  .portfolio-wrapper .portfolio-photo {
-    width: 100%;
-    min-height: 300px;
-    float: none;
-    background: #B5B1AC;
-    transition: all 2s; }
-
   .experience-wrapper .experience-info {
     width: 100%;
     height: 300px;
@@ -312,5 +311,14 @@ body {
     float: none;
     background: #B5B1AC;
     transition: all 2s; } }
+* {
+  box-sizing: border-box; }
+
+html {
+  background-color: #595959; }
+
+body {
+  margin: 0;
+  background-color: #595959; }
 
 /*# sourceMappingURL=style.css.map */
