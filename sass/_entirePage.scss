@@ -118,10 +118,11 @@
 }
 
 .project-wrapper {
-  height: 200px;
+  height: 210px;
   background-color: $grey-font;
   margin: 1%;
   transition: all 2s;
+  font-size: 1.4vmax;
 
 
   .project-info {
@@ -138,10 +139,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    a {
+      width: 90%;
+    }
     img {
       border: 2px solid $background-color;
-      width: 250px;
-      height: 150px;
+      width: 100%;
+      &:hover {
+        border: 3px solid $orange-font;
+        transition: ease 1s;
+      }
     }
   }
 }

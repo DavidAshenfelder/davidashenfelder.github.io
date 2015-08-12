@@ -6,26 +6,8 @@
         margin: 5px;
         width: 100%;
         font-size: 24px;
+
       }
-    }
-  }
-}
-
-@media (max-width: 1050px) {
-  .portfolio-wrapper {
-    height: auto;
-    .portfolio-info {
-      width: 100%;
-      height: auto;
-      float: none;
-      transition: all 2s;
-    }
-    .portfolio-photo {
-      width: 100%;
-      min-height: 300px;
-      float: none;
-      transition: all 2s;
-
     }
   }
 }
@@ -34,7 +16,6 @@
 @media (max-width: 600px) {
 .banner{
   background: $background-color;
-  transition: all 2s;
 
   .contact-wrapper {
     a h2 {
@@ -73,6 +54,45 @@
     background: $grey-font;
     transition: all 2s;
 
+  }
+}
+.portfolio-wrapper {
+  .portfolio-info {
+    width: 100%;
+    height: 300px;
+    float: none;
+    transition: all 2s;
+  }
+  .portfolio-photo {
+    width: 100%;
+    min-height: 300px;
+    float: none;
+    background: $grey-font;
+    transition: all 2s;
+
+  }
+}
+
+.project-wrapper {
+  height: 400px;
+  .project-info {
+    width: 100%;
+    h3, p {
+      width: 90%;
+      font-size: 2vmax;
+    }
+  }
+  .project-pic {
+    float: left;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      border: 2px solid $background-color;
+      width: 90%;
+    }
   }
 }
 
