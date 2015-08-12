@@ -23,3 +23,46 @@ body {
   margin: 0;
   background-color: $background-color;
 }
+
+@media (max-width: 600px) {
+
+.about-me-wrapper {
+  .about-me-info {
+    width: 100%;
+    height: 300px;
+    float: none;
+  }
+  .about-me-photo {
+    width: 100%;
+    min-height: 300px;
+    float: none;
+    background: $grey-font;
+  }
+}
+.portfolio-wrapper {
+  .portfolio-info {
+    width: 100%;
+    height: 300px;
+    float: none;
+  }
+  .portfolio-photo {
+    width: 100%;
+    min-height: 300px;
+    float: none;
+    background: $grey-font;
+  }
+}
+.experience-wrapper {
+  .experience-info {
+    width: 100%;
+    height: 300px;
+    float: none;
+  }
+  .experience-photo {
+    width: 100%;
+    min-height: 300px;
+    float: none;
+    background: $grey-font;
+  }
+}
+}

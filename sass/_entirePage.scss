@@ -2,7 +2,7 @@
   text-align: center;
   h1 {
     color: $light-grey;
-    font-size: 10vmax;
+    font-size: 7vmax;
     margin: 0;
   }
   h5 {
@@ -22,7 +22,7 @@
 .about-me-wrapper {
   font-family: 'Josefin Slab', serif;
   width: 100%;
-  height: 700px;
+  min-height: 700px;
   .about-me-info {
     width: 50%;
     float: left;
@@ -38,7 +38,7 @@
   .about-me-photo {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Boards-Ready-to-Dry.jpg) no-repeat no-repeat fixed;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Boards-Ready-to-Dry.jpg) no-repeat no-repeat fixed;
-    height: 700px;
+    min-height: 700px;
     width: 50%;
     float: right;
     background-size: cover;
@@ -57,18 +57,13 @@
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    /*   -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px);
-    filter: blur(3px); */
   }
 }
 
 .portfolio-wrapper {
   font-family: 'Josefin Slab', serif;
   width: 100%;
-  height: 700px;
+  min-height: 700px;
   .portfolio-info {
     width: 50%;
     height: 100%;
@@ -78,15 +73,16 @@
       color: $grey-font;
       text-align: center;
       width: 100%;
-      margin: 0
+      margin: 0;
     }
   }
 
   .portfolio-photo {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/stacked_wood.jpg) no-repeat no-repeat fixed;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/stacked_wood.jpg) no-repeat no-repeat fixed;
-    height: 700px;
+    min-height: 700px;
     width: 50%;
+    float: left;
     background-size: cover;
     display: -webkit-box;
     display: -webkit-flex;
@@ -148,7 +144,7 @@
 .experience-wrapper {
   font-family: 'Josefin Slab', serif;
   width: 100%;
-  height: 700px;
+  min-height: 700px;
   .experience-info {
     width: 50%;
     float: left;
@@ -164,7 +160,7 @@
   .experience-photo {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/pile-of-reclaimed-wood.jpg) no-repeat no-repeat fixed;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/pile-of-reclaimed-wood.jpg) no-repeat no-repeat fixed;
-    height: 700px;
+    min-height: 700px;
     width: 50%;
     float: right;
     background-size: cover;
@@ -183,10 +179,5 @@
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    /*   -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px);
-    filter: blur(3px); */
   }
 }
