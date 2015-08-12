@@ -29,15 +29,28 @@ body {
 }
 .banner{
   background: $background-color;
+  transition: all 2s;
+
   .contact-wrapper {
     a h2 {
       width: 100%;
       font-size: 4vmax;
+      transition: all 2s;
     }
   }
-.banner-wrapper {
+  .banner-wrapper {
+    border-top: 2px solid $tan;
+    border-bottom: 2px solid $tan;
+    margin-top: 90px;
+    transition: all 2s;
 
-}
+    .banner-pic {
+      border: none;
+      border-radius: 0;
+      transition: all 2s;
+
+    }
+  }
 }
 
 .about-me-wrapper {

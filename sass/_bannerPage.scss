@@ -6,6 +6,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  transition: all 2s;
+
         h2 {
           text-align: center;
           color: $orange-font;
@@ -22,6 +24,8 @@
             width: 25%;
             display: inline-block;
             text-decoration: underline;
+            transition: all 2s;
+
             &:hover {
               color: $light-orange
             }

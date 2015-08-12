@@ -203,7 +203,8 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  transition: all 2s; }
   .banner h2 {
     text-align: center;
     color: #BB6B0C;
@@ -217,7 +218,8 @@
       color: #6D6B69;
       width: 25%;
       display: inline-block;
-      text-decoration: underline; }
+      text-decoration: underline;
+      transition: all 2s; }
       .banner .contact-wrapper a h2:hover {
         color: #FF9828; }
   .banner .name {
@@ -259,10 +261,21 @@ body {
 
 @media (max-width: 600px) {
   .banner {
-    background: #595959; }
+    background: #595959;
+    transition: all 2s; }
     .banner .contact-wrapper a h2 {
       width: 100%;
-      font-size: 4vmax; }
+      font-size: 4vmax;
+      transition: all 2s; }
+    .banner .banner-wrapper {
+      border-top: 2px solid #C3AC91;
+      border-bottom: 2px solid #C3AC91;
+      margin-top: 90px;
+      transition: all 2s; }
+      .banner .banner-wrapper .banner-pic {
+        border: none;
+        border-radius: 0;
+        transition: all 2s; }
 
   .about-me-wrapper .about-me-info {
     width: 100%;
