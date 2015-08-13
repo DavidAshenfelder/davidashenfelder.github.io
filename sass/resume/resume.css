@@ -1,0 +1,63 @@
+body {
+  background-color: #B5B1AC; }
+
+.resume-wrapper {
+  width: 70%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  font-family: 'Josefin Slab', serif; }
+
+.header {
+  background-color: #595959;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .header .name {
+    color: #B5B1AC;
+    width: 100%;
+    margin: 1%; }
+  .header .self-title {
+    width: 100%;
+    margin: 1%;
+    color: #BB6B0C; }
+  .header .contact-information {
+    width: 100%;
+    margin: .5%;
+    color: #B5B1AC; }
+    .header .contact-information h3 {
+      margin: 0; }
+  .header .printer-wrapper {
+    display: block;
+    width: 100%;
+    margin: 1%; }
+    .header .printer-wrapper .print {
+      float: right;
+      width: 10%; }
+      .header .printer-wrapper .print button {
+        border-radius: 3px;
+        width: 100%; }
+        .header .printer-wrapper .print button:hover {
+          cursor: pointer; }
+      .header .printer-wrapper .print .printer {
+        width: 100%; }
+
+.resume-content {
+  padding: 2%; }
+
+.category-heading {
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 5px; }
+
+.sub-category-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px; }
+
+/*# sourceMappingURL=resume.css.map */

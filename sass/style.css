@@ -20,9 +20,14 @@
   min-height: 700px;
   transition: all 2s; }
   .about-me-wrapper .about-me-info {
+    font-weight: 100;
+    max-height: 700px;
     width: 50%;
     float: left;
-    transition: all 2s; }
+    transition: all 2s;
+    overflow: scroll; }
+    .about-me-wrapper .about-me-info h2 {
+      margin: 2%; }
     .about-me-wrapper .about-me-info h1 {
       background-color: #6D6B69;
       color: #B5B1AC;
@@ -30,6 +35,10 @@
       width: 100%;
       margin: 0;
       transition: all 2s; }
+  .about-me-wrapper #build-a-purpose {
+    color: #BB6B0C;
+    font-size: 32px;
+    text-align: center; }
   .about-me-wrapper .about-me-photo {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Boards-Ready-to-Dry.jpg) no-repeat no-repeat fixed;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Boards-Ready-to-Dry.jpg) no-repeat no-repeat fixed;
@@ -57,7 +66,7 @@
 .portfolio-wrapper {
   font-family: 'Josefin Slab', serif;
   width: 100%;
-  height: 700px;
+  min-height: 700px;
   transition: all 2s; }
   .portfolio-wrapper .portfolio-info {
     width: 50%;
@@ -97,9 +106,19 @@
 .project-wrapper {
   height: 210px;
   background-color: #B5B1AC;
+  color: #595959;
   margin: 1%;
+  padding: 1%;
   transition: all 2s;
-  font-size: 1.4vmax; }
+  font-size: 1.3vmax; }
+  .project-wrapper h3 {
+    margin: 0; }
+  .project-wrapper .github, .project-wrapper .link {
+    color: #595959; }
+    .project-wrapper .github:hover, .project-wrapper .link:hover {
+      cursor: pointer;
+      color: #BB6B0C;
+      transition: ease .5s; }
   .project-wrapper .project-info {
     float: right;
     width: 49%; }
@@ -170,7 +189,7 @@
     transition: all 2s; }
 
 .navbar {
-  box-shadow: 2px 2px 2px #C3AC91;
+  box-shadow: 2px 2px 2px #6D6B69;
   z-index: 100;
   position: fixed;
   top: 0;
@@ -178,17 +197,17 @@
   margin-left: auto;
   margin-right: auto;
   background-color: #595959;
-  color: #BB6B0C;
+  color: #B5B1AC;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  opacity: .9;
+  opacity: .95;
   font-family: 'Josefin Slab', serif; }
   .navbar .navbar-wrapper {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     background-color: #595959;
-    color: #BB6B0C;
+    color: #B5B1AC;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; }
   .navbar .social-wrapper {
@@ -204,7 +223,7 @@
     margin-right: auto; }
   .navbar a {
     background-color: #595959;
-    color: #BB6B0C;
+    color: #B5B1AC;
     margin: 1.5vmax;
     font-size: 2vmax;
     text-align: center; }
@@ -271,6 +290,9 @@
     width: 100%;
     font-size: 24px; } }
 @media (max-width: 600px) {
+  .navbar a {
+    font-size: 12px; }
+
   .banner {
     background: #595959; }
     .banner .contact-wrapper a h2 {
@@ -289,7 +311,6 @@
 
   .about-me-wrapper .about-me-info {
     width: 100%;
-    height: 300px;
     float: none;
     transition: all 2s; }
   .about-me-wrapper .about-me-photo {
@@ -301,7 +322,6 @@
 
   .portfolio-wrapper .portfolio-info {
     width: 100%;
-    height: 300px;
     float: none;
     transition: all 2s; }
   .portfolio-wrapper .portfolio-photo {
@@ -312,15 +332,14 @@
     transition: all 2s; }
 
   .project-wrapper {
-    height: 400px;
+    min-height: 450px;
     padding: 1%; }
     .project-wrapper .project-info {
       width: 100%; }
       .project-wrapper .project-info h3, .project-wrapper .project-info p {
         width: 90%;
-        font-size: 2vmax; }
+        font-size: 3vmax; }
     .project-wrapper .project-pic {
-      float: left;
       width: 100%;
       height: auto; }
       .project-wrapper .project-pic a {
@@ -331,7 +350,7 @@
 
   .experience-wrapper .experience-info {
     width: 100%;
-    height: 300px;
+    min-height: 300px;
     float: none;
     transition: all 2s; }
   .experience-wrapper .experience-photo {

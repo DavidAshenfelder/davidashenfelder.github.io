@@ -26,10 +26,15 @@
   transition: all 2s;
 
   .about-me-info {
+    font-weight: 100;
+    max-height: 700px;
     width: 50%;
     float: left;
     transition: all 2s;
-
+    overflow: scroll;
+    h2 {
+      margin: 2%;
+    }
     h1 {
       background-color: $light-grey;
       color: $grey-font;
@@ -37,8 +42,12 @@
       width: 100%;
       margin: 0;
       transition: all 2s;
-
     }
+  }
+  #build-a-purpose {
+    color: $orange-font;
+    font-size: 32px;
+    text-align: center;
   }
 
   .about-me-photo {
@@ -71,7 +80,7 @@
 .portfolio-wrapper {
   font-family: 'Josefin Slab', serif;
   width: 100%;
-  height: 700px;
+  min-height: 700px;
   transition: all 2s;
 
   .portfolio-info {
@@ -86,7 +95,6 @@
       width: 100%;
       margin: 0;
       transition: all 2s;
-
     }
   }
 
@@ -120,10 +128,22 @@
 .project-wrapper {
   height: 210px;
   background-color: $grey-font;
+  color: $background-color;
   margin: 1%;
+  padding: 1%;
   transition: all 2s;
-  font-size: 1.4vmax;
-
+  font-size: 1.3vmax;
+  h3 {
+    margin: 0;
+  }
+  .github, .link {
+    color: $background-color;
+    &:hover {
+      cursor: pointer;
+      color: $orange-font;
+      transition: ease .5s;
+    }
+  }
 
   .project-info {
     float: right;

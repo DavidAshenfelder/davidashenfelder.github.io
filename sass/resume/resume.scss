@@ -1,0 +1,85 @@
+$orange-font: #BB6B0C;
+$light-orange: #FF9828;
+$grey-font: #B5B1AC;
+$light-grey: #6D6B69;
+$background-color: #595959;
+$dark-teal: #0081B2;
+$light-teal: #28C4FF;
+$tan: #C3AC91;
+
+body {
+background-color: $grey-font;
+}
+
+.resume-wrapper {
+  width: 70%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  font-family: 'Josefin Slab', serif;
+}
+
+.header {
+  background-color: $background-color;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .name {
+    color: $grey-font;
+    width: 100%;
+    margin: 1%;
+  }
+  .self-title {
+    width: 100%;
+    margin: 1%;
+    color: $orange-font;
+  }
+  .contact-information {
+    width: 100%;
+    margin: .5%;
+    color: $grey-font;
+    h3 {
+      margin: 0;
+    }
+  }
+  .printer-wrapper {
+    display: block;
+    width: 100%;
+    margin: 1%;
+    .print {
+      float: right;
+      width: 10%;
+      button {
+        border-radius: 3px;
+        width: 100%;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .printer {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.resume-content {
+  padding: 2%;
+}
+
+.category-heading {
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 5px;
+}
+
+.sub-category-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px;
+}

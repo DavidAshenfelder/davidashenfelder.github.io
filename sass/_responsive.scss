@@ -14,6 +14,11 @@
 
 
 @media (max-width: 600px) {
+.navbar {
+  a {
+    font-size: 12px;
+  }
+}
 .banner{
   background: $background-color;
 
@@ -42,7 +47,6 @@
 .about-me-wrapper {
   .about-me-info {
     width: 100%;
-    height: 300px;
     float: none;
     transition: all 2s;
 
@@ -59,7 +63,6 @@
 .portfolio-wrapper {
   .portfolio-info {
     width: 100%;
-    height: 300px;
     float: none;
     transition: all 2s;
   }
@@ -74,17 +77,16 @@
 }
 
 .project-wrapper {
-  height: 400px;
+  min-height: 450px;
   padding: 1%;
   .project-info {
     width: 100%;
     h3, p {
       width: 90%;
-      font-size: 2vmax;
+      font-size: 3vmax;
     }
   }
   .project-pic {
-    float: left;
     width: 100%;
     height: auto;
     a {
@@ -100,7 +102,7 @@
 .experience-wrapper {
   .experience-info {
     width: 100%;
-    height: 300px;
+    min-height: 300px;
     float: none;
     transition: all 2s;
 
