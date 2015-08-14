@@ -7,12 +7,8 @@
   .photo-text-wrapper h5 {
     color: #BB6B0C;
     font-size: 2.5vmax;
-    margin: 0; }
-
-.contact {
-  position: absolute;
-  top: 0;
-  left: 5px; }
+    margin: 0;
+    text-transform: uppercase; }
 
 .about-me-wrapper {
   font-family: 'Josefin Slab', serif;
@@ -26,8 +22,13 @@
     float: left;
     transition: all 2s;
     overflow: scroll; }
-    .about-me-wrapper .about-me-info h2 {
-      margin: 2%; }
+    .about-me-wrapper .about-me-info .about-me-body {
+      margin: 2%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; }
     .about-me-wrapper .about-me-info h1 {
       background-color: #6D6B69;
       color: #B5B1AC;
@@ -158,6 +159,9 @@
     width: 50%;
     float: left;
     transition: all 2s; }
+    .experience-wrapper .experience-info .experience-info-body {
+      display: flex;
+      justify-content: center; }
     .experience-wrapper .experience-info h1 {
       background-color: #6D6B69;
       color: #B5B1AC;
@@ -211,9 +215,9 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; }
   .navbar .social-wrapper {
-    position: absolute;
+    /*   position: absolute;
     top: 0;
-    right: 5px;
+    right: 5px; */
     height: 100%;
     font-size: 2vmax; }
   .navbar .navbar-btn {
@@ -225,7 +229,7 @@
     background-color: #595959;
     color: #B5B1AC;
     margin: 1.5vmax;
-    font-size: 2vmax;
+    font-size: 24px;
     text-align: center; }
     .navbar a:hover {
       color: #FF9828;
@@ -290,9 +294,6 @@
     width: 100%;
     font-size: 24px; } }
 @media (max-width: 600px) {
-  .navbar a {
-    font-size: 12px; }
-
   .banner {
     background: #595959; }
     .banner .contact-wrapper a h2 {
