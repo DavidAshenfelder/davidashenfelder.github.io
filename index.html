@@ -33,9 +33,9 @@
           </ul>
           <ul class="nav navbar-nav">
 
-            <li><div class="navbar-btn"> <a href="#">About</a> </div></li>
-            <li><div class="navbar-btn"> <a href="#">Portfolio</a></div></li>
-            <li><div class="navbar-btn"> <a href="/resume.html">Resume</a></div></li>
+            <li><div class="navbar-btn" id="about"> <a href="">About</a> </div></li>
+            <li><div class="navbar-btn" id="portfolio"> <a href="">Portfolio</a></div></li>
+            <li><div class="navbar-btn" id="resume"> <a href="">Resume</a></div></li>
             <li><div class="navbar-btn"> <a href="/blog/">Blog</a> </div></li>
             <li role="separator" class="divider"></li>
           </ul>
@@ -45,7 +45,7 @@
                 <a href="https://github.com/DavidAshenfelder"><i class="fa fa-github"></i></a>
               </div>
               <div class="navbar-btn linkd-in-icon">
-                <a href="https://www.linkedin.com/pub/david-ashenfelder/69/aa7/26"><i class="fa fa-linkedin"></i></i></a>
+                <a href="https://www.linkedin.com/pub/david-ashenfelder/69/aa7/26"><i class="fa fa-linkedin"></i></a>
               </div>
             </div></li>
           </ul>
@@ -54,6 +54,9 @@
     </nav>
 
     <div class="home-page-wrapper">
+      <div class="scroll-button">
+        <button type="button" name="button"><i class="fa fa-chevron-down"></i></button>
+      </div>
       <section class="banner">
         <div class="banner-wrapper">
           <div class="banner-pic">
@@ -68,7 +71,7 @@
         </div>
       </section>
 
-      <div class="about-me-wrapper">
+      <div class="about-me-wrapper" id=about-me>
         <div class="about-me-photo">
           <div class="photo-text-wrapper">
             <h1><i class="fa fa-wrench"></i></h1>
@@ -77,11 +80,11 @@
         </div>
         <aside class="about-me-info">
           <h1>About Me</h1>
-          <div class="about-me-body"><h2>After 7 years with a large corporation working as an Assistant Store Manager, I felt like I was drifting without a purpose. I decided to make a huge career change and promised myself from the beginning that I would make this experience count and...</h2> <h2 id="build-a-purpose"><i class="fa fa-quote-left"></i>Build a Purpose!<i class="fa fa-quote-right"></i></h2> <h2>I spent my summer in 2015 at The Iron Yard in Charleston, SC developing and learning. My passion for coding is higher than ever, and my knowledge continues to grow every day.</h2></div>
+          <div class="about-me-body"><h2>After 7 years with a large corporation working as an Assistant Store Manager, I felt like I was drifting without a purpose. I decided to make a huge career change and promised myself from the beginning that I would make this experience count and...</h2> <h2 id="build-a-purpose"><i class="fa fa-quote-left"></i>Build a Purpose!<i class="fa fa-quote-right"></i></h2> <h2>I spent my summer in 2015 at The Iron Yard in Charleston, SC developing and learning. My passion for coding is higher than ever, and my knowledge continues to grow every day. I am excited to find a work environment that I can grow in and contribute to!</h2></div>
         </aside>
       </div>
 
-      <div class="portfolio-wrapper">
+      <div class="portfolio-wrapper" id="portfolio">
         <div class="portfolio-photo">
           <div class="photo-text-wrapper">
             <h1><i class="fa fa-briefcase"></i></h1>
@@ -130,7 +133,7 @@
         </aside>
       </div>
 
-      <div class="experience-wrapper">
+      <div class="experience-wrapper" id="resume-button">
         <div class="experience-photo">
           <div class="photo-text-wrapper">
             <h1><i class="fa fa-certificate"></i></h1>
@@ -138,7 +141,10 @@
           </div>
         </div>
         <aside class="experience-info">
-          <h1>Resume</h1>
+          <div class="experience-info-header-wrapper">
+            <h1>Resume</h1>
+            <a class="full-screen" href="resume.html"><button type="button" name="button">Full Screen</button></a>
+          </div>
           <div class="experience-info-body">
             <iframe src="resume.html" style="width:100%; height:660px;" frameborder="0"></iframe>
           </div>

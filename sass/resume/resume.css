@@ -35,18 +35,18 @@ body {
     color: #B5B1AC; }
     .header .contact-information h3 {
       margin: 0; }
-  .header .printer-wrapper {
+  .header .button-wrapper {
     display: block;
     width: 100%;
     margin: 1%; }
-    .header .printer-wrapper .print {
+    .header .button-wrapper .button {
       float: right; }
-      .header .printer-wrapper .print button {
+      .header .button-wrapper .button button {
         border-radius: 3px;
         width: 100%; }
-        .header .printer-wrapper .print button:hover {
+        .header .button-wrapper .button button:hover {
           cursor: pointer; }
-      .header .printer-wrapper .print .printer, .header .printer-wrapper .print .home {
+      .header .button-wrapper .button .printer, .header .button-wrapper .button .home {
         width: 100%; }
 
 .resume-content {

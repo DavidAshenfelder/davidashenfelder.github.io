@@ -14,7 +14,9 @@
 
 
 @media (max-width: 600px) {
-
+.scroll-button {
+  display: none
+}
 .banner{
   background: $background-color;
 
