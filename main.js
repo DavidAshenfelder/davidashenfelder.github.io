@@ -28,11 +28,11 @@ page.topPage();
       event.preventDefault()
       var scrollLocation = window.pageYOffset;
       if (scrollLocation < 700) {
-        $("html, body").animate({ scrollTop: 700 }, 2000);
+        $("html, body").animate({ scrollTop: 700 }, 1000);
       } else if (scrollLocation < 1400 && scrollLocation >= 700) {
-        $("html, body").animate({ scrollTop: 1400 }, 2000);
+        $("html, body").animate({ scrollTop: 1400 }, 1000);
       } else {
-        $("html, body").animate({ scrollTop: 2100 }, 2000);
+        $("html, body").animate({ scrollTop: 2100 }, 1000);
 
       }
     })
@@ -40,25 +40,25 @@ page.topPage();
   topPage: function() {
     $('body').on('click','#home' ,function(event) {
       event.preventDefault()
-      $("html, body").animate({ scrollTop: 0 }, 2000);
+      $("html, body").animate({ scrollTop: 0}, 1000);
     })
   },
   about: function() {
     $('body').on('click','#about' ,function(event) {
       event.preventDefault()
-      $("html, body").animate({ scrollTop: 700 }, 2000);
+      $("html, body").animate({ scrollTop: $("#about-me").offset().top}, 1000);
     })
   },
   portfolio: function() {
     $('body').on('click','#portfolio' ,function(event) {
       event.preventDefault()
-      $("html, body").animate({ scrollTop: 1400 }, 2000);
+      $("html, body").animate({ scrollTop: $("#portfolio-page").offset().top }, 1000);
     })
   },
   resume: function() {
     $('body').on('click','#resume' ,function(event) {
       event.preventDefault()
-      $("html, body").animate({ scrollTop: 2100 }, 2000);
+      $("html, body").animate({ scrollTop: $("#resume-page").offset().top }, 1000);
     })
   },
 };
