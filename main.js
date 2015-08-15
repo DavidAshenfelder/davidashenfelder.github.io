@@ -28,11 +28,11 @@ page.topPage();
       event.preventDefault()
       var scrollLocation = window.pageYOffset;
       if (scrollLocation < 700) {
-        $("html, body").animate({ scrollTop: 700 }, 1000);
+        $("html, body").animate({ scrollTop: $("#about-me").offset().top }, 1000);
       } else if (scrollLocation < 1400 && scrollLocation >= 700) {
-        $("html, body").animate({ scrollTop: 1400 }, 1000);
+        $("html, body").animate({ scrollTop: $("#portfolio-page").offset().top }, 1000);
       } else {
-        $("html, body").animate({ scrollTop: 2100 }, 1000);
+        $("html, body").animate({ scrollTop: $("#resume-page").offset().top }, 1000);
 
       }
     })
