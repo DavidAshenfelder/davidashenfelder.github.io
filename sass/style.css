@@ -8,7 +8,7 @@
 .photo-text-wrapper {
   text-align: center; }
   .photo-text-wrapper h1 {
-    color: #6D6B69;
+    color: #B5B1AC;
     font-size: 7vmax;
     margin: 0; }
   .photo-text-wrapper h5 {
@@ -91,11 +91,14 @@
   font-family: 'Josefin Slab', serif;
   width: 100%;
   min-height: 700px;
-  transition: all 2s; }
+  transition: all 2s;
+  padding: 5px; }
   .portfolio-wrapper .portfolio-info {
     width: 50%;
     float: right;
-    transition: all 2s; }
+    transition: all 2s;
+    display: inline-flex;
+    flex-wrap: wrap; }
     .portfolio-wrapper .portfolio-info h1 {
       background-color: #6D6B69;
       color: #B5B1AC;
@@ -128,13 +131,13 @@
     transition: all 2s; }
 
 .project-wrapper {
-  height: 33%;
   background-color: #B5B1AC;
-  color: #595959;
-  margin: 1%;
-  padding: 1%;
+  margin: 7px;
+  padding: 6px;
   transition: all 2s;
-  font-size: 1.5vmax; }
+  font-size: 1.5vmax;
+  max-height: 210px;
+  min-height: 210px; }
   .project-wrapper h3 {
     margin: 0; }
   .project-wrapper .github, .project-wrapper .link {
@@ -169,7 +172,8 @@
       width: 90%; }
     .project-wrapper .project-pic img {
       border: 2px solid #595959;
-      width: 100%; }
+      width: 100%;
+      max-height: 200px; }
       .project-wrapper .project-pic img:hover {
         border: 3px solid #BB6B0C;
         transition: ease 1s; }
@@ -254,7 +258,7 @@
     opacity: .3; }
 
 .navbar {
-  box-shadow: 2px 2px 2px #6D6B69;
+  border: 1px solid #B5B1AC;
   z-index: 100;
   position: fixed;
   top: 0;
@@ -307,9 +311,10 @@
     font-family: 'Josefin Slab', serif; }
   .banner .contact-wrapper {
     width: 100%;
-    height: 30%;
+    height: 25%;
     align-items: flex-end;
-    text-align: center; }
+    text-align: center;
+    margin: 10px; }
     .banner .contact-wrapper a h2 {
       font-family: 'Josefin Slab', serif;
       text-align: center;
@@ -328,7 +333,7 @@
     font-size: 3vmax; }
 
 .banner-wrapper {
-  height: 70%;
+  height: 65%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -346,33 +351,44 @@
       .banner-wrapper .banner-pic-wrapper .banner-pic .pic {
         background: url(../images/hipsterlogogenerator_1433019727585.png) no-repeat no-repeat fixed;
         background-position-x: 50%;
-        background-position-y: 20%;
+        background-position-y: 15%;
         background-size: 400px 400px;
         width: 300px;
         height: 300px;
         border-radius: 100%; }
 
-@media (min-width: 1000px) {
-  .project-wrapper {
-    font-size: 1vmax; } }
 @media (max-width: 1250px) {
   .banner .contact-wrapper a h2 {
     margin: 5px;
     width: 100%;
     font-size: 24px; } }
+@media (min-width: 1000px) {
+  .project-wrapper {
+    font-size: 1vmax; } }
+@media (max-width: 1000px) {
+  .about-me-wrapper .about-me-info h2 {
+    font-size: 26px; } }
+@media (max-width: 800px) {
+  .about-me-wrapper .about-me-info h2 {
+    font-size: 21px; } }
 @media (max-width: 600px) {
   .banner {
     background: #595959; }
 
+  .photo-text-wrapper h1 {
+    color: #595959; }
+
   .about-me-wrapper .about-me-info {
     width: 100%;
     float: none;
-    transition: all 2s; }
+    transition: all 2s;
+    font-size: 20px; }
   .about-me-wrapper .about-me-photo {
     width: 100%;
     min-height: 300px;
     float: none;
     background: #B5B1AC;
+    color: #595959;
     transition: all 2s; }
 
   .portfolio-wrapper .portfolio-info {

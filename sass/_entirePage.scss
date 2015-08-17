@@ -10,7 +10,7 @@
 .photo-text-wrapper{
   text-align: center;
   h1 {
-    color: $light-grey;
+    color: $grey-font;
     font-size: 7vmax;
     margin: 0;
   }
@@ -110,11 +110,15 @@
   width: 100%;
   min-height: 700px;
   transition: all 2s;
+  padding: 5px;
 
   .portfolio-info {
     width: 50%;
     float: right;
     transition: all 2s;
+    display: inline-flex;
+    flex-wrap: wrap;
+
 
     h1 {
       background-color: $light-grey;
@@ -154,13 +158,13 @@
 }
 
 .project-wrapper {
-  height: 33%;
   background-color: $grey-font;
-  color: $background-color;
-  margin: 1%;
-  padding: 1%;
+  margin: 7px;
+  padding: 6px;
   transition: all 2s;
   font-size: 1.5vmax;
+  max-height: 210px;
+  min-height: 210px;
   h3 {
     margin: 0;
   }
@@ -203,6 +207,7 @@
     img {
       border: 2px solid $background-color;
       width: 100%;
+      max-height: 200px;
       &:hover {
         border: 3px solid $orange-font;
         transition: ease 1s;

@@ -71,7 +71,7 @@ page.navSlideUp();
     $(window).scroll(function() {
       var homePos = $('#home').position()
       if (homePos.top <= -5) {
-        $('.navbar').animate({}, 2000).removeClass('hide');
+        $('.navbar').removeClass('hide');
         $('.nav-show-button').addClass('hide');
         $('.nav-collapse-button').removeClass('hide');
 
