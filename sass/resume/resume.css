@@ -35,6 +35,8 @@ body {
     color: #B5B1AC; }
     .header .contact-information h3 {
       margin: 0; }
+  .header .resume-social-wrapper {
+    width: 100%; }
   .header .button-wrapper {
     display: block;
     width: 100%;

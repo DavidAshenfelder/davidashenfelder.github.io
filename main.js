@@ -21,6 +21,10 @@ page.portfolio();
 page.about();
 page.resume();
 page.topPage();
+page.navCollapse();
+page.navShow();
+page.navDropDown();
+page.navSlideUp();
 },
 
   scrollDown: function () {
@@ -33,6 +37,44 @@ page.topPage();
         $("html, body").animate({ scrollTop: $("#portfolio-page").offset().top }, 1000);
       } else {
         $("html, body").animate({ scrollTop: $("#resume-page").offset().top }, 1000);
+
+      }
+    })
+  },
+
+  navDropDown: function () {
+    $('body').on('click','.nav-show-button button' ,function(event) {
+      $('.navbar').removeClass('hide');
+      $('.nav-show-button').addClass('hide');
+      $('.nav-collapse-button').removeClass('hide')
+
+    })
+  },
+
+  navSlideUp: function () {
+    $('body').on('click','.nav-collapse-button' ,function(event) {
+      $('.navbar').addClass('hide');
+      $('.nav-show-button').removeClass('hide');
+      $('.nav-collapse-button').addClass('hide');
+
+    })
+  },
+
+  navCollapse: function() {
+    $(window).scroll(function() {
+    $('.navbar').addClass('hide');
+    $('.nav-show-button').removeClass('hide');
+    $('.nav-collapse-button').addClass('hide');
+    })
+  },
+  navShow: function() {
+    $(window).scroll(function() {
+      var homePos = $('#home').position()
+      if (homePos.top <= -5) {
+        $('.navbar').animate({}, 2000).removeClass('hide');
+        $('.nav-show-button').addClass('hide');
+        $('.nav-collapse-button').removeClass('hide');
+
 
       }
     })
