@@ -39,14 +39,15 @@
     width: 50%;
     float: left;
     transition: all 2s;
-    overflow: scroll; }
-    .about-me-wrapper .about-me-info .about-me-body {
-      margin: 2%;
-      height: 100%;
+    font-size: 28px; }
+    .about-me-wrapper .about-me-info .about-me-body-wrapper {
       display: flex;
-      justify-content: center;
       align-items: center;
-      flex-wrap: wrap; }
+      justify-content: center;
+      flex-wrap: wrap;
+      height: 100%; }
+      .about-me-wrapper .about-me-info .about-me-body-wrapper .about-me-body {
+        margin: 2%; }
     .about-me-wrapper .about-me-info h1 {
       background-color: #6D6B69;
       color: #B5B1AC;
@@ -127,13 +128,13 @@
     transition: all 2s; }
 
 .project-wrapper {
-  height: 210px;
+  height: 215px;
   background-color: #B5B1AC;
   color: #595959;
   margin: 1%;
   padding: 1%;
   transition: all 2s;
-  font-size: 1.3vmax; }
+  font-size: 1.5vmax; }
   .project-wrapper h3 {
     margin: 0; }
   .project-wrapper .github, .project-wrapper .link {
@@ -343,6 +344,9 @@
     border-radius: 100%;
     border: 2px solid #C3AC91; }
 
+@media (min-width: 1000px) {
+  .project-wrapper {
+    font-size: 1vmax; } }
 @media (max-width: 1250px) {
   .banner .contact-wrapper a h2 {
     margin: 5px;

@@ -47,14 +47,16 @@
     width: 50%;
     float: left;
     transition: all 2s;
-    overflow: scroll;
-    .about-me-body {
-      margin: 2%;
-      height: 100%;
+    font-size: 28px;
+    .about-me-body-wrapper {
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       flex-wrap: wrap;
+      height: 100%;
+      .about-me-body {
+        margin: 2%;
+      }
     }
     h1 {
       background-color: $light-grey;
@@ -152,13 +154,13 @@
 }
 
 .project-wrapper {
-  height: 210px;
+  height: 215px;
   background-color: $grey-font;
   color: $background-color;
   margin: 1%;
   padding: 1%;
   transition: all 2s;
-  font-size: 1.3vmax;
+  font-size: 1.5vmax;
   h3 {
     margin: 0;
   }
