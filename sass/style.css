@@ -39,7 +39,7 @@
     width: 50%;
     float: left;
     transition: all 2s;
-    font-size: 28px; }
+    font-size: 1vmax; }
     .about-me-wrapper .about-me-info .about-me-body-wrapper {
       display: flex;
       align-items: center;
@@ -128,7 +128,7 @@
     transition: all 2s; }
 
 .project-wrapper {
-  height: 215px;
+  height: 33%;
   background-color: #B5B1AC;
   color: #595959;
   margin: 1%;
@@ -145,7 +145,8 @@
       transition: ease .5s; }
   .project-wrapper .project-info {
     float: right;
-    width: 49%; }
+    width: 49%;
+    height: 100%; }
     .project-wrapper .project-info h3, .project-wrapper .project-info p {
       width: 90%; }
   .project-wrapper .project-pic {
@@ -258,6 +259,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  max-height: 70px;
   margin-left: auto;
   margin-right: auto;
   background-color: #595959;
@@ -274,11 +276,9 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; }
   .navbar .social-wrapper {
-    height: 100%;
-    font-size: 2vmax; }
+    height: 100%; }
   .navbar .navbar-btn {
     display: inline-block;
-    margin: 1.5vmax;
     margin-left: auto;
     margin-right: auto; }
   .navbar a {
@@ -307,6 +307,8 @@
     font-family: 'Josefin Slab', serif; }
   .banner .contact-wrapper {
     width: 100%;
+    height: 30%;
+    align-items: flex-end;
     text-align: center; }
     .banner .contact-wrapper a h2 {
       font-family: 'Josefin Slab', serif;
@@ -326,23 +328,29 @@
     font-size: 3vmax; }
 
 .banner-wrapper {
-  margin-top: 140px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-flex;
+  height: 70%;
+  display: flex;
   align-items: center;
-  justify-content: center; }
-  .banner-wrapper .banner-pic {
-    background: url(../images/hipsterlogogenerator_1433019727585.png) no-repeat fixed;
-    background-size: 400px 400px;
-    background-color: #595959;
-    background-position: 50% 8vmax;
-    display: inline-block;
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    border: 2px solid #C3AC91; }
+  justify-content: center;
+  flex-wrap: wrap; }
+  .banner-wrapper .banner-pic-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .banner-wrapper .banner-pic-wrapper .banner-pic {
+      width: 300px;
+      border-radius: 100%;
+      border: 2px solid #C3AC91;
+      display: flex;
+      justify-content: center; }
+      .banner-wrapper .banner-pic-wrapper .banner-pic .pic {
+        background: url(../images/hipsterlogogenerator_1433019727585.png) no-repeat no-repeat fixed;
+        background-position-x: 50%;
+        background-position-y: 20%;
+        background-size: 400px 400px;
+        width: 300px;
+        height: 300px;
+        border-radius: 100%; }
 
 @media (min-width: 1000px) {
   .project-wrapper {
@@ -355,19 +363,6 @@
 @media (max-width: 600px) {
   .banner {
     background: #595959; }
-    .banner .contact-wrapper a h2 {
-      width: 100%;
-      font-size: 4vmax;
-      transition: all 2s; }
-    .banner .banner-wrapper {
-      border-top: 2px solid #C3AC91;
-      border-bottom: 2px solid #C3AC91;
-      margin-top: 90px;
-      transition: all 2s; }
-      .banner .banner-wrapper .banner-pic {
-        border: none;
-        border-radius: 0;
-        transition: all 2s; }
 
   .about-me-wrapper .about-me-info {
     width: 100%;

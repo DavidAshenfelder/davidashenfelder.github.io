@@ -18,6 +18,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  max-height: 70px;
   margin-left: auto;
   margin-right: auto;
   background-color: $background-color;
@@ -38,12 +39,10 @@
 
   .social-wrapper {
     height: 100%;
-    font-size: 2vmax;
   }
 
   .navbar-btn {
     display: inline-block;
-    margin: 1.5vmax;
     margin-left: auto;
     margin-right: auto;
   }

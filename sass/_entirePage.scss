@@ -47,7 +47,7 @@
     width: 50%;
     float: left;
     transition: all 2s;
-    font-size: 28px;
+    font-size: 1vmax;
     .about-me-body-wrapper {
       display: flex;
       align-items: center;
@@ -154,7 +154,7 @@
 }
 
 .project-wrapper {
-  height: 215px;
+  height: 33%;
   background-color: $grey-font;
   color: $background-color;
   margin: 1%;
@@ -176,6 +176,7 @@
   .project-info {
     float: right;
     width: 49%;
+    height: 100%;
     h3, p {
       width: 90%;
     }

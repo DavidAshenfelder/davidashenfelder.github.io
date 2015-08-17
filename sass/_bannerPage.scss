@@ -16,6 +16,8 @@
 
         .contact-wrapper {
           width: 100%;
+          height: 30%;
+          align-items: flex-end;
           text-align: center;
           a h2 {
             font-family: 'Josefin Slab', serif;
@@ -42,24 +44,31 @@
       }
 
         .banner-wrapper {
-          margin-top: 140px;
-          width: 100%;
-          margin-left: auto;
-          margin-right: auto;
-          display: inline-flex;
+          height: 70%;
+          display: flex;
           align-items: center;
           justify-content: center;
+          flex-wrap: wrap;
+          .banner-pic-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .banner-pic {
+                width: 300px;
+                border-radius: 100%;
+                border: 2px solid $tan;
+                display: flex;
+                justify-content: center;
+                .pic {
+                  background: url(../images/hipsterlogogenerator_1433019727585.png) no-repeat no-repeat fixed;
+                  background-position-x: 50%;
+                  background-position-y: 20%;
+                  background-size: 400px 400px;
+                  width: 300px;
+                  height: 300px;
+                  border-radius: 100%;
+                }
 
-          .banner-pic {
-              background: url(../images/hipsterlogogenerator_1433019727585.png) no-repeat fixed;
-              background-size: 400px 400px;
-              background-color: $background-color;
-              background-position: 50% 8vmax;
-              display: inline-block;
-              width: 300px;
-              height: 300px;
-              border-radius: 100%;
-              border: 2px solid $tan;
-
+            }
           }
         }
