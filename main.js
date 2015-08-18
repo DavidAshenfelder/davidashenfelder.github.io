@@ -82,10 +82,11 @@ page.showScrollToTop();
     $(window).scroll(function() {
       var homePos = $('#home').position()
       var width = $('body').width()
+      console.log(homePos.top);
       if (homePos.top >= 3419 && width <= 600) {
         $('#scroll-button').addClass('hide');
         $('#top-button').removeClass('hide');
-      } else if (homePos.top >= 2095 && width > 600) {
+      } else if (homePos.top >= 2090 && width > 600) {
         $('#scroll-button').addClass('hide');
         $('#top-button').removeClass('hide');
       } else {
