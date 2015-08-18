@@ -96,14 +96,15 @@ page.showScrollToTop();
   },
 
   scrollToTop: function() {
-    $('body').on('click', '#top-button', function() {
-        $("html, body").animate({ scrollTop: 0}, 2500);
+    $('body').on('click', '#top-button', function(event) {
+      event.preventDefault();
+      $("html, body").animate({ scrollTop: 0}, 2500);
     })
   },
 
   topPage: function() {
     $('body').on('click','#home' ,function(event) {
-      event.preventDefault()
+      event.preventDefault();
       $("html, body").animate({ scrollTop: 0}, 1000);
     })
   },
