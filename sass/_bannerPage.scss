@@ -1,12 +1,11 @@
 .banner {
   height: 700px;
   width: 100%;
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/wood-wallpaper-6.jpg) no-repeat no-repeat fixed;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/wood-wallpaper-6.jpg) no-repeat no-repeat fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
-  transition: all 2s;
+  -webkit-transition: all 2s;
+          transition: all 2s;
 
         h2 {
           text-align: center;
@@ -17,7 +16,10 @@
         .contact-wrapper {
           width: 100%;
           height: 25%;
-          align-items: flex-end;
+          -webkit-box-align: end;
+          -webkit-align-items: flex-end;
+              -ms-flex-align: end;
+                  align-items: flex-end;
           text-align: center;
           margin: 10px;
           a h2 {
@@ -46,20 +48,46 @@
 
         .banner-wrapper {
           height: 65%;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
           display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-flex-wrap: wrap;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap;
           .banner-pic-wrapper {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
             .banner-pic {
                 width: 300px;
                 border-radius: 100%;
                 border: 2px solid $tan;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
                 display: flex;
-                justify-content: center;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
                 .pic {
                   background: url(../images/hipsterlogogenerator_1433019727585.png) no-repeat no-repeat fixed;
                   background-position-x: 50%;

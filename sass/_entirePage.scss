@@ -1,6 +1,7 @@
 .hide {
   display: none;
-  transition: all 2s;
+  -webkit-transition: all 2s;
+          transition: all 2s;
 }
 
 .show {
@@ -39,20 +40,33 @@
   font-family: 'Josefin Slab', serif;
   width: 100%;
   min-height: 700px;
-  transition: all 2s;
+  -webkit-transition: all 2s;
+          transition: all 2s;
 
   .about-me-info {
     font-weight: 100;
     height: 700px;
     width: 50%;
     float: left;
-    transition: all 2s;
+    -webkit-transition: all 2s;
+            transition: all 2s;
     font-size: 1vmax;
     .about-me-body-wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
       height: 100%;
       .about-me-body {
         margin: 2%;
@@ -64,7 +78,8 @@
       text-align: center;
       width: 100%;
       margin: 0;
-      transition: all 2s;
+      -webkit-transition: all 2s;
+              transition: all 2s;
     }
     h2 {
       font-size: 28px;
@@ -100,7 +115,8 @@
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-            transition: all 2s;
+            -webkit-transition: all 2s;
+                    transition: all 2s;
 
   }
 }
@@ -109,15 +125,22 @@
   font-family: 'Josefin Slab', serif;
   width: 100%;
   min-height: 700px;
-  transition: all 2s;
+  -webkit-transition: all 2s;
+          transition: all 2s;
   padding: 5px;
 
   .portfolio-info {
     width: 50%;
     float: right;
-    transition: all 2s;
+    -webkit-transition: all 2s;
+            transition: all 2s;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 
 
     h1 {
@@ -126,7 +149,8 @@
       text-align: center;
       width: 100%;
       margin: 0;
-      transition: all 2s;
+      -webkit-transition: all 2s;
+              transition: all 2s;
     }
   }
 
@@ -152,7 +176,8 @@
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-            transition: all 2s;
+            -webkit-transition: all 2s;
+                    transition: all 2s;
 
   }
 }
@@ -161,7 +186,8 @@
   background-color: $grey-font;
   margin: 7px;
   padding: 6px;
-  transition: all 2s;
+  -webkit-transition: all 2s;
+          transition: all 2s;
   font-size: 1.5vmax;
   max-height: 210px;
   min-height: 210px;
@@ -173,7 +199,8 @@
     &:hover {
       cursor: pointer;
       color: $orange-font;
-      transition: ease .5s;
+      -webkit-transition: ease .5s;
+              transition: ease .5s;
     }
   }
 
@@ -210,7 +237,8 @@
       max-height: 200px;
       &:hover {
         border: 3px solid $orange-font;
-        transition: ease 1s;
+        -webkit-transition: ease 1s;
+                transition: ease 1s;
       }
     }
   }
@@ -220,15 +248,23 @@
   font-family: 'Josefin Slab', serif;
   width: 100%;
   min-height: 700px;
-  transition: all 2s;
+  -webkit-transition: all 2s;
+          transition: all 2s;
 
   .experience-info {
     width: 50%;
     float: left;
-    transition: all 2s;
+    -webkit-transition: all 2s;
+            transition: all 2s;
     .experience-info-body {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       background-color: $grey-font;
     }
     .experience-info-header-wrapper {
@@ -236,9 +272,18 @@
       color: $grey-font;
       width: 100%;
       margin: 0;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
       display: inline-flex;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
       text-align: center;
     }
     h1 {
@@ -261,7 +306,8 @@
           color: $light-orange;
           background-color: $background-color;
           border: 1px solid $grey-font;
-          transition: ease .25s;
+          -webkit-transition: ease .25s;
+                  transition: ease .25s;
 
         }
       }
@@ -290,6 +336,7 @@
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-            transition: all 2s;
+            -webkit-transition: all 2s;
+                    transition: all 2s;
   }
 }
