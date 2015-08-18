@@ -25,6 +25,8 @@ page.navCollapse();
 page.navShow();
 page.navDropDown();
 page.navSlideUp();
+page.scrollToTop();
+page.showScrollToTop();
 },
 
   scrollDown: function () {
@@ -37,7 +39,6 @@ page.navSlideUp();
         $("html, body").animate({ scrollTop: $("#portfolio-page").offset().top }, 1000);
       } else {
         $("html, body").animate({ scrollTop: $("#resume-page").offset().top }, 1000);
-
       }
     })
   },
@@ -47,7 +48,6 @@ page.navSlideUp();
       $('.navbar').removeClass('hide');
       $('.nav-show-button').addClass('hide');
       $('.nav-collapse-button').removeClass('hide')
-
     })
   },
 
@@ -56,7 +56,6 @@ page.navSlideUp();
       $('.navbar').addClass('hide');
       $('.nav-show-button').removeClass('hide');
       $('.nav-collapse-button').addClass('hide');
-
     })
   },
 
@@ -67,6 +66,7 @@ page.navSlideUp();
     $('.nav-collapse-button').addClass('hide');
     })
   },
+
   navShow: function() {
     $(window).scroll(function() {
       var homePos = $('#home').position()
@@ -74,29 +74,54 @@ page.navSlideUp();
         $('.navbar').removeClass('hide');
         $('.nav-show-button').addClass('hide');
         $('.nav-collapse-button').removeClass('hide');
-
-
       }
     })
   },
+
+  showScrollToTop: function() {
+    $(window).scroll(function() {
+      var homePos = $('#home').position()
+      var width = $('body').width()
+      if (homePos.top >= 3419 && width <= 600) {
+        $('#scroll-button').addClass('hide');
+        $('#top-button').removeClass('hide');
+      } else if (homePos.top >= 2095 && width > 600) {
+        $('#scroll-button').addClass('hide');
+        $('#top-button').removeClass('hide');
+      } else {
+        $('#scroll-button').removeClass('hide');
+        $('#top-button').addClass('hide');
+      }
+    })
+  },
+
+  scrollToTop: function() {
+    $('body').on('click', '#top-button', function() {
+        $("html, body").animate({ scrollTop: 0}, 2500);
+    })
+  },
+
   topPage: function() {
     $('body').on('click','#home' ,function(event) {
       event.preventDefault()
       $("html, body").animate({ scrollTop: 0}, 1000);
     })
   },
+
   about: function() {
     $('body').on('click','#about' ,function(event) {
       event.preventDefault()
       $("html, body").animate({ scrollTop: $("#about-me").offset().top}, 1000);
     })
   },
+
   portfolio: function() {
     $('body').on('click','#portfolio' ,function(event) {
       event.preventDefault()
       $("html, body").animate({ scrollTop: $("#portfolio-page").offset().top }, 1000);
     })
   },
+
   resume: function() {
     $('body').on('click','#resume' ,function(event) {
       event.preventDefault()
