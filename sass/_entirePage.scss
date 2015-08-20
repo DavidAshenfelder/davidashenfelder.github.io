@@ -88,6 +88,7 @@
     h2 {
       font-size: 28px;
       margin: 0;
+      color: $grey-font;
     }
   }
   #build-a-purpose {
@@ -270,6 +271,10 @@
           -ms-flex-pack: center;
               justify-content: center;
       background-color: $grey-font;
+      .lock-frame {
+        width:100%;
+        height:660px;
+      }
     }
     .experience-info-header-wrapper {
       background-color: $light-grey;

@@ -26,12 +26,11 @@
             font-family: 'Josefin Slab', serif;
             text-align: center;
             color: $grey-font;
-            width: 25%;
+            width: 33%;
             display: inline-block;
-            text-decoration: underline;
-
             &:hover {
-              color: $light-orange
+              color: $light-orange;
+              transition: ease .3s;
             }
           }
         }

@@ -17,16 +17,14 @@ initStyling: function() {
 
 initEvents: function() {
 page.scrollDown();
-page.portfolio();
-page.about();
-page.resume();
-page.topPage();
+page.scrollPage();
 page.navCollapse();
 page.navShow();
 page.navDropDown();
 page.navSlideUp();
 page.scrollToTop();
 page.showScrollToTop();
+page.disableLinks();
 },
 
   scrollDown: function () {
@@ -82,7 +80,6 @@ page.showScrollToTop();
     $(window).scroll(function() {
       var homePos = $('#home').position()
       var width = $('body').width()
-      console.log(homePos.top);
       if (homePos.top >= 3419 && width <= 600) {
         $('#scroll-button').addClass('hide');
         $('#top-button').removeClass('hide');
@@ -97,37 +94,22 @@ page.showScrollToTop();
   },
 
   scrollToTop: function() {
-    $('body').on('click', '#top-button', function(event) {
-      event.preventDefault();
-      $("html, body").animate({ scrollTop: 0}, 2500);
+    $('body').on('click', '#top-button', function() {
+      $('body').animate({ scrollTop: $('#home-page').offset().top}, 2000);
     })
   },
 
-  topPage: function() {
-    $('body').on('click','#home' ,function(event) {
-      event.preventDefault();
-      $("html, body").animate({ scrollTop: 0}, 1000);
-    })
-  },
-
-  about: function() {
-    $('body').on('click','#about' ,function(event) {
+  scrollPage: function() {
+    $('.nav-link').on('click',function(event) {
       event.preventDefault()
-      $("html, body").animate({ scrollTop: $("#about-me").offset().top}, 1000);
+      $("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top}, 1000);
     })
   },
 
-  portfolio: function() {
-    $('body').on('click','#portfolio' ,function(event) {
-      event.preventDefault()
-      $("html, body").animate({ scrollTop: $("#portfolio-page").offset().top }, 1000);
-    })
-  },
-
-  resume: function() {
-    $('body').on('click','#resume' ,function(event) {
-      event.preventDefault()
-      $("html, body").animate({ scrollTop: $("#resume-page").offset().top }, 1000);
-    })
-  },
+  disableLinks: function () {
+    $('.lock-frame').contents().find('a').click(function(event) {
+        alert('Select full-screen to access this link')
+        event.preventDefault();
+    });
+  }
 };

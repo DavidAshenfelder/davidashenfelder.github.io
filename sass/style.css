@@ -76,7 +76,8 @@
       transition: all 2s; }
     .about-me-wrapper .about-me-info h2 {
       font-size: 28px;
-      margin: 0; }
+      margin: 0;
+      color: #B5B1AC; }
   .about-me-wrapper #build-a-purpose {
     color: #BB6B0C;
     font-size: 44px;
@@ -231,6 +232,9 @@
       -ms-flex-pack: center;
       justify-content: center;
       background-color: #B5B1AC; }
+      .experience-wrapper .experience-info .experience-info-body .lock-frame {
+        width: 100%;
+        height: 660px; }
     .experience-wrapper .experience-info .experience-info-header-wrapper {
       background-color: #6D6B69;
       color: #B5B1AC;
@@ -319,17 +323,13 @@
   margin-right: auto;
   background-color: #595959;
   color: #B5B1AC;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
   font-family: 'Josefin Slab', serif; }
   .navbar .navbar-wrapper {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     background-color: #595959;
-    color: #B5B1AC;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; }
+    color: #B5B1AC; }
   .navbar .social-wrapper {
     height: 100%; }
   .navbar .navbar-btn {
@@ -343,9 +343,9 @@
     font-size: 24px;
     text-align: center; }
     .navbar a:hover {
-      color: #FF9828;
+      color: #BB6B0C;
       text-decoration: none;
-      opacity: .5; }
+      transition: ease .3s; }
 
 .banner {
   height: 700px;
@@ -372,11 +372,11 @@
       font-family: 'Josefin Slab', serif;
       text-align: center;
       color: #B5B1AC;
-      width: 25%;
-      display: inline-block;
-      text-decoration: underline; }
+      width: 33%;
+      display: inline-block; }
       .banner .contact-wrapper a h2:hover {
-        color: #FF9828; }
+        color: #FF9828;
+        transition: ease .3s; }
   .banner .name {
     color: #C3AC91;
     margin: 1%;
@@ -511,9 +511,6 @@
     transition: all 2s; } }
 * {
   box-sizing: border-box; }
-
-html {
-  background-color: #595959; }
 
 body {
   margin: 0;
