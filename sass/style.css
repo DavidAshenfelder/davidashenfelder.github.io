@@ -21,13 +21,16 @@
 .scroll-button {
   position: fixed;
   bottom: 0;
-  opacity: .2;
   width: 100%;
   height: 50px;
   font-size: 32px; }
   .scroll-button button {
+    opacity: .2;
     width: 100%;
     height: 100%; }
+    .scroll-button button:hover {
+      opacity: 1;
+      background-color: #B5B1AC; }
 
 #top-button .fa-angle-double-up {
   font-size: 48px;
@@ -310,6 +313,10 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     opacity: .3; }
+    .nav-show-button button:hover {
+      opacity: 1;
+      background-color: #595959;
+      color: #B5B1AC; }
 
 .navbar {
   border: 1px solid #B5B1AC;
@@ -449,7 +456,7 @@
     font-size: 21px; } }
 @media (max-width: 600px) {
   .banner {
-    background: #595959; }
+    background-position: -200px 0px; }
 
   .photo-text-wrapper h1 {
     color: #595959; }
@@ -509,8 +516,13 @@
 * {
   box-sizing: border-box; }
 
+html {
+  margin: 0;
+  width: 100%; }
+
 body {
   margin: 0;
+  width: 100%;
   background-color: #595959; }
 
 /*# sourceMappingURL=style.css.map */

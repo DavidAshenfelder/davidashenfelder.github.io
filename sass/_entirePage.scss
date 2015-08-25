@@ -26,13 +26,17 @@
 .scroll-button {
   position: fixed;
   bottom: 0;
-  opacity: .2;
   width: 100%;
   height: 50px;
   font-size: 32px;
   button {
+    opacity: .2;
     width: 100%;
     height: 100%;
+    &:hover {
+      opacity: 1;
+      background-color: $grey-font;
+    }
   }
 }
 

@@ -77,7 +77,8 @@ page.disableLinks();
     $(window).scroll(function() {
       var homePos = $('#home').position()
       var width = $('body').width() // for responsive design
-      if (homePos.top >= 3419 && width <= 600) { //homePos.top value changes when in responsive because hieights on elements change
+      console.log(homePos.top);
+      if (homePos.top >= 3408 && width <= 600) { //homePos.top value changes when in responsive because hieights on elements change
         $('#scroll-button').addClass('hide');
         $('#top-button').removeClass('hide');
       } else if (homePos.top >= 2090 && width > 600) { //homePos.top value changes when in responsive because hieights on elements change
@@ -92,8 +93,8 @@ page.disableLinks();
 
 // Scrolls to top of page based on #home-page
   scrollToTop: function() {
-    $('body').on('click', '#top-button', function() {
-      $('body').animate({ scrollTop: $('#home-page').offset().top}, 2000);
+    $('html, body').on('click', '#top-button', function() {
+      $('html, body').animate({ scrollTop: $('#home-page').offset().top}, 2000);
     })
   },
 
