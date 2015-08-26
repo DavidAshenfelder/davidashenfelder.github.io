@@ -448,10 +448,7 @@
   .banner .contact-wrapper a h2 {
     margin: 5px;
     width: 100%;
-    font-size: 24px; }
-  .banner .banner-wrapper .banner-pic-wrapper .banner-pic .pic {
-    background-position-x: center;
-    background-position-y: .5%; } }
+    font-size: 24px; } }
 @media (min-width: 1000px) {
   .project-wrapper {
     font-size: 1vmax; } }
@@ -463,8 +460,11 @@
     font-size: 21px; } }
 @media (max-width: 600px) {
   .banner {
-    background-size: 600px 700px;
+    background-size: 100% 700px;
     background-position: center; }
+    .banner .banner-wrapper .banner-pic-wrapper .banner-pic .pic {
+      background-position-x: center;
+      background-position-y: .5%; }
 
   .photo-text-wrapper h1 {
     color: #595959; }

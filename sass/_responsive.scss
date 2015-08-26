@@ -10,10 +10,6 @@
 
       }
     }
-    .banner-wrapper .banner-pic-wrapper .banner-pic .pic {
-      background-position-x: center;
-      background-position-y: .5%;
-    }
   }
 }
 
@@ -37,9 +33,14 @@
 
 
 @media (max-width: 600px) {
+
 .banner{
-  background-size: 600px 700px;
+  background-size: 100% 700px;
   background-position: center;
+  .banner-wrapper .banner-pic-wrapper .banner-pic .pic {
+    background-position-x: center;
+    background-position-y: .5%;
+  }
 }
 
 .photo-text-wrapper{
