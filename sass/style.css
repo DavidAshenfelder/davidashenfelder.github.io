@@ -6,6 +6,9 @@
 .show {
   display: block; }
 
+.home-page-wrapper {
+  overflow: hidden; }
+
 .photo-text-wrapper {
   text-align: center; }
   .photo-text-wrapper h1 {
@@ -456,7 +459,7 @@
     font-size: 21px; } }
 @media (max-width: 600px) {
   .banner {
-    background-position: -200px 0px; }
+    background-size: 100% 100%; }
 
   .photo-text-wrapper h1 {
     color: #595959; }
