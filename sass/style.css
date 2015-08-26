@@ -460,11 +460,7 @@
     font-size: 21px; } }
 @media (max-width: 600px) {
   .banner {
-    background-size: 100% 700px;
-    background-position: center; }
-    .banner .banner-wrapper .banner-pic-wrapper .banner-pic .pic {
-      background-position-x: center;
-      background-position-y: .5%; }
+    background: #595959; }
 
   .photo-text-wrapper h1 {
     color: #595959; }

@@ -1,14 +1,10 @@
 @media (max-width: 1250px) {
 
-  .banner{
-
-    .contact-wrapper {
-      a h2 {
-        margin: 5px;
-        width: 100%;
-        font-size: 24px;
-
-      }
+  .banner .contact-wrapper {
+    a h2 {
+      margin: 5px;
+      width: 100%;
+      font-size: 24px;
     }
   }
 }
@@ -33,15 +29,9 @@
 
 
 @media (max-width: 600px) {
-
-.banner{
-  background-size: 100% 700px;
-  background-position: center;
-  .banner-wrapper .banner-pic-wrapper .banner-pic .pic {
-    background-position-x: center;
-    background-position-y: .5%;
+  .banner{
+    background: $background-color;
   }
-}
 
 .photo-text-wrapper{
   h1 {
