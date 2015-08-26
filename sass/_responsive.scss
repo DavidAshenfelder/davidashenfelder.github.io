@@ -1,6 +1,7 @@
 @media (max-width: 1250px) {
 
   .banner{
+
     .contact-wrapper {
       a h2 {
         margin: 5px;
@@ -8,6 +9,10 @@
         font-size: 24px;
 
       }
+    }
+    .banner-wrapper .banner-pic-wrapper .banner-pic .pic {
+      background-position-x: center;
+      background-position-y: .5%;
     }
   }
 }
@@ -33,6 +38,7 @@
 
 @media (max-width: 600px) {
 .banner{
+  background-size: 600px 700px;
   background-position: center;
 }
 
