@@ -362,7 +362,8 @@
   width: 100%;
   background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/wood-wallpaper-6.jpg) no-repeat no-repeat fixed;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/wood-wallpaper-6.jpg) no-repeat no-repeat fixed;
-  background-position: fixed; }
+  background-attachment: fixed !important;
+  background-size: cover !important; }
   .banner h2 {
     text-align: center;
     color: #BB6B0C;
