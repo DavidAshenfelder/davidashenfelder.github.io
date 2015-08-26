@@ -19,12 +19,11 @@
               -ms-flex-align: end;
                   align-items: flex-end;
           text-align: center;
-          margin: 10px;
           a h2 {
             font-family: 'Josefin Slab', serif;
             text-align: center;
             color: $grey-font;
-            width: 33%;
+            width: 30%;
             display: inline-block;
             &:hover {
               color: $light-orange;

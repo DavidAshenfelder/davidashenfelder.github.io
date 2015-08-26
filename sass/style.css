@@ -373,13 +373,12 @@
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
     align-items: flex-end;
-    text-align: center;
-    margin: 10px; }
+    text-align: center; }
     .banner .contact-wrapper a h2 {
       font-family: 'Josefin Slab', serif;
       text-align: center;
       color: #B5B1AC;
-      width: 33%;
+      width: 30%;
       display: inline-block; }
       .banner .contact-wrapper a h2:hover {
         color: #FF9828;
