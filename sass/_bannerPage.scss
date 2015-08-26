@@ -28,7 +28,8 @@
             display: inline-block;
             &:hover {
               color: $light-orange;
-              transition: ease .3s;
+              -webkit-transition: ease .3s;
+                      transition: ease .3s;
             }
           }
         }
@@ -75,6 +76,7 @@
                     align-items: center;
             .banner-pic {
                 width: 300px;
+                background: transparent;
                 border-radius: 100%;
                 border: 2px solid $tan;
                 display: -webkit-box;

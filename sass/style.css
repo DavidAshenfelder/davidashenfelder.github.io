@@ -383,6 +383,7 @@
       display: inline-block; }
       .banner .contact-wrapper a h2:hover {
         color: #FF9828;
+        -webkit-transition: ease .3s;
         transition: ease .3s; }
   .banner .name {
     color: #C3AC91;
@@ -424,6 +425,7 @@
     align-items: center; }
     .banner-wrapper .banner-pic-wrapper .banner-pic {
       width: 300px;
+      background: transparent;
       border-radius: 100%;
       border: 2px solid #C3AC91;
       display: -webkit-box;
