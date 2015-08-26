@@ -112,7 +112,8 @@
     min-height: 700px;
     width: 50%;
     float: right;
-    background-size: cover;
+    background-size: cover !important;
+    background-attachment: fixed !important;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

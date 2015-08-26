@@ -95,7 +95,8 @@
     min-height: 700px;
     width: 50%;
     float: right;
-    background-size: cover;
+    background-size: cover !important;
+    background-attachment: fixed !important;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -361,7 +362,8 @@
   width: 100%;
   background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/wood-wallpaper-6.jpg) no-repeat no-repeat fixed;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/wood-wallpaper-6.jpg) no-repeat no-repeat fixed;
-  background-size: cover; }
+  background-attachment: fixed !important;
+  background-size: cover !important; }
   .banner h2 {
     text-align: center;
     color: #BB6B0C;
