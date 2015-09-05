@@ -62,10 +62,10 @@
         </button>
       </nav>
       <div class="scroll-button" id="scroll-button">
-        <button class="animated rollIn" type="button" name="button"><i class="fa fa-chevron-down"></i></button>
+        <button class="animated fadeInDown" type="button" name="button"><i class="fa fa-chevron-down"></i></button>
       </div>
       <div class="scroll-button hide" id="top-button">
-        <button type="button" name="button"><i class="fa fa-angle-double-up"></i></button>
+        <button class="animated fadeInUp" type="button" name="button"><i class="fa fa-angle-double-up"></i></button>
       </div>
       <section class="banner" id="home-page">
         <div class="banner-wrapper">
@@ -86,7 +86,7 @@
 
       <div class="about-me-wrapper" id=about-me>
         <div class="about-me-photo">
-          <div class="photo-text-wrapper">
+          <div class=" wow fadeInLeft photo-text-wrapper" >
             <h1><i class="fa fa-wrench"></i></h1>
             <h1>Building a Purpose</h1>
           </div>
@@ -104,7 +104,7 @@
 
       <div class="portfolio-wrapper" id="portfolio-page">
         <div class="portfolio-photo">
-          <div class="photo-text-wrapper">
+          <div class="wow fadeInRight photo-text-wrapper">
             <h1><i class="fa fa-briefcase"></i></h1>
             <h1>My bag of Tricks</h1>
             <h5>ANGULAR.JS + BACKBONE.JS + JAVASCRIPT + JQUERY + UNDERSCORE.JS HTML5 + CSS3 + SASS + BOOTSTRAP BOWER + NPM</h5>
@@ -154,7 +154,7 @@
       </div>
       <div class="experience-wrapper" id="resume-page">
         <div class="experience-photo">
-          <div class="photo-text-wrapper">
+          <div class="wow fadeInLeft photo-text-wrapper">
             <h1><i class="fa fa-certificate"></i></h1>
             <h1>I got that...</h1>
           </div>
@@ -172,6 +172,10 @@
     </div>
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

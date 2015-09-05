@@ -27,6 +27,10 @@ button:focus, button:active, button.active, button:focus:active {
     margin: 0;
     text-transform: uppercase; }
 
+.animated, .rollIn {
+  opacity: .5;
+  animation-duration: 2s; }
+
 .scroll-button {
   position: fixed;
   bottom: 0;
