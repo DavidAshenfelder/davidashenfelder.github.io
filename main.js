@@ -32,9 +32,14 @@ page.disableLinks();
     $('body').on('click','.scroll-button' ,function(event) {
       event.preventDefault()
       var scrollLocation = window.pageYOffset;
-      if (scrollLocation < 700) {
+      console.log('scrollLocation', scrollLocation);
+      var windowHeight = window.innerHeight;
+      var windowPortfolio = windowHeight * 3;
+      console.log('windowPortfolio', windowPortfolio);
+      console.log('windowHeight', windowHeight);
+      if (scrollLocation < windowHeight) {
         $("html, body").animate({ scrollTop: $("#about-me").offset().top }, 1000);
-      } else if (scrollLocation < 1400 && scrollLocation >= 700) {
+      } else if (scrollLocation >= windowHeight && scrollLocation < windowPortfolio) {
         $("html, body").animate({ scrollTop: $("#portfolio-page").offset().top }, 1000);
       } else {
         $("html, body").animate({ scrollTop: $("#resume-page").offset().top }, 1000);
@@ -75,13 +80,11 @@ page.disableLinks();
 // shows the scroll button based on #home position in window//
   showScroll: function() {
     $(window).scroll(function() {
+      var bottomPage = window.innerHeight * 5;
+
       var homePos = $('#home').position()
-      var width = $('body').width() // for responsive design
-      console.log(homePos.top);
-      if (homePos.top >= 3408 && width <= 600) { //homePos.top value changes when in responsive because hieights on elements change
-        $('#scroll-button').addClass('hide');
-        $('#top-button').removeClass('hide');
-      } else if (homePos.top >= 2090 && width > 600) { //homePos.top value changes when in responsive because hieights on elements change
+      var width = $('body').width()
+      if (homePos.top >= bottomPage) {
         $('#scroll-button').addClass('hide');
         $('#top-button').removeClass('hide');
       } else { // this shows the go to top button if you are at bottom of page.
@@ -89,6 +92,7 @@ page.disableLinks();
         $('#top-button').addClass('hide');
       }
     })
+
   },
 
 // Scrolls to top of page based on #home-page
@@ -102,7 +106,7 @@ page.disableLinks();
   scrollPage: function() {
     $('.nav-link').on('click',function(event) {
       event.preventDefault()
-      $("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top}, 1000);
+      $("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top}, 2000);
     })
   },
 

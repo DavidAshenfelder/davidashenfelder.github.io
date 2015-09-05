@@ -12,8 +12,11 @@
     opacity: .3;
     &:hover {
       opacity: 1;
-      background-color: $background-color;
+      background-color: $light-grey;
       color: $grey-font;
+      li {
+        background-color: $light-grey;
+      }
     }
   }
 }
@@ -54,12 +57,13 @@
     margin: 1.5vmax;
     font-size: 24px;
     text-align: center;
-
-
+    height: 50px;
+    width: 100%;
     &:hover {
       color: $orange-font;
       text-decoration: none;
-      transition: ease .3s;
+      border-bottom: 2px solid $orange-font;
+      transition: ease .5s;
     }
   }
 }
