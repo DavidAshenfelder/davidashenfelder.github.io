@@ -32,17 +32,25 @@ page.disableLinks();
     $('body').on('click','.scroll-button' ,function(event) {
       event.preventDefault()
       var scrollLocation = window.pageYOffset;
-      console.log('scrollLocation', scrollLocation);
       var windowHeight = window.innerHeight;
-      var windowPortfolio = windowHeight * 3;
-      console.log('windowPortfolio', windowPortfolio);
-      console.log('windowHeight', windowHeight);
+      var aboutMePic = windowHeight;
+      var aboutMeInfo = windowHeight * 2;
+      var portfolioPic = windowHeight * 3;
+      var portfolioInfo = windowHeight * 4;
+      var resumePic = windowHeight * 5;
+      var resumeInfo = windowHeight * 6;
       if (scrollLocation < windowHeight) {
         $("html, body").animate({ scrollTop: $("#about-me").offset().top }, 1000);
-      } else if (scrollLocation >= windowHeight && scrollLocation < windowPortfolio) {
+      } else if (scrollLocation >= aboutMePic && scrollLocation < aboutMeInfo) {
+        $("html, body").animate({ scrollTop: $("#about-me-info").offset().top }, 1000);
+      } else if (scrollLocation >= aboutMeInfo && scrollLocation < portfolioPic) {
         $("html, body").animate({ scrollTop: $("#portfolio-page").offset().top }, 1000);
-      } else {
+      } else if (scrollLocation >= portfolioPic && scrollLocation < portfolioInfo) {
+        $("html, body").animate({ scrollTop: $("#portfolio-info").offset().top }, 1000);
+      } else if (scrollLocation >= portfolioInfo && scrollLocation < resumePic) {
         $("html, body").animate({ scrollTop: $("#resume-page").offset().top }, 1000);
+      } else {
+        $("html, body").animate({ scrollTop: $("#resume-info").offset().top }, 1000);
       }
     })
   },
@@ -68,6 +76,7 @@ page.disableLinks();
 // if you are at the top of the page, show the navigation bar//
   navShow: function() {
     $(window).scroll(function() {
+      var scrollLocation = window.pageYOffset;
       var homePos = $('#home').position()
       if (homePos.top <= -5) {
         $('.navbar').removeClass('hide');
@@ -84,7 +93,7 @@ page.disableLinks();
 
       var homePos = $('#home').position()
       var width = $('body').width()
-      if (homePos.top >= bottomPage) {
+      if (homePos.top >= bottomPage + 300) {
         $('#scroll-button').addClass('hide');
         $('#top-button').removeClass('hide');
       } else { // this shows the go to top button if you are at bottom of page.
@@ -98,7 +107,7 @@ page.disableLinks();
 // Scrolls to top of page based on #home-page
   scrollToTop: function() {
     $('html, body').on('click', '#top-button', function() {
-      $('html, body').animate({ scrollTop: $('#home-page').offset().top}, 2000);
+      $('html, body').animate({ scrollTop: $('#home-page').offset().top}, 4000);
     })
   },
 

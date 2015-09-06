@@ -2,8 +2,8 @@
   height: 100vh;
   border-bottom: 2px solid $tan;
   width: 100%;
-  background: -webkit-linear-gradient(left, rgba(216, 216, 216, 0.9), rgba(216, 216, 216, 0.9)), url(../images/wood-wallpaper-6.jpg) no-repeat no-repeat fixed;
-  background: linear-gradient(to right, rgba(216, 216, 216, 0.9), rgba(216, 216, 216, 0.9)), url(../images/wood-wallpaper-6.jpg) no-repeat no-repeat fixed;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/wood-tools.jpg) no-repeat no-repeat fixed;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/wood-tools.jpg) no-repeat no-repeat fixed;
   background-attachment: fixed !important;
   background-size: cover !important;
 
@@ -14,8 +14,9 @@
         }
 
         .contact-wrapper {
+          background-color: $tan;
           width: 100%;
-          height: 25%;
+          float: bottom;
           -webkit-box-align: end;
           -webkit-align-items: flex-end;
               -ms-flex-align: end;
@@ -35,7 +36,7 @@
           }
         }
         .name {
-          color: $tan;
+          color: $background-color;
           margin: 1%;
           font-size: 4vmax;
         }

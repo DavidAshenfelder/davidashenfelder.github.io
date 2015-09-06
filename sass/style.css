@@ -16,7 +16,8 @@ button:focus, button:active, button.active, button:focus:active {
   overflow: hidden; }
 
 .photo-text-wrapper {
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
   .photo-text-wrapper h1 {
     color: #595959;
     font-size: 7vmax;
@@ -102,8 +103,8 @@ button:focus, button:active, button.active, button:focus:active {
     text-align: center;
     margin: 0; }
   .about-me-wrapper .about-me-photo {
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../images/Boards-Ready-to-Dry.jpg) no-repeat no-repeat fixed;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../images/Boards-Ready-to-Dry.jpg) no-repeat no-repeat fixed;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(../images/computer-on-desk.jpg) no-repeat no-repeat fixed;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(../images/computer-on-desk.jpg) no-repeat no-repeat fixed;
     height: 100vh;
     width: 100%;
     float: right;
@@ -156,8 +157,8 @@ button:focus, button:active, button.active, button:focus:active {
       -webkit-transition: all 2s;
       transition: all 2s; }
   .portfolio-wrapper .portfolio-photo {
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/stacked_wood.jpg) no-repeat no-repeat fixed;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/stacked_wood.jpg) no-repeat no-repeat fixed;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(../images/Boards-Ready-to-Dry.jpg) no-repeat no-repeat fixed;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(../images/Boards-Ready-to-Dry.jpg) no-repeat no-repeat fixed;
     height: 100vh;
     width: 100%;
     float: left;
@@ -294,8 +295,8 @@ button:focus, button:active, button.active, button:focus:active {
           -webkit-transition: ease .25s;
           transition: ease .25s; }
   .experience-wrapper .experience-photo {
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/pile-of-reclaimed-wood.jpg) no-repeat no-repeat fixed;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/pile-of-reclaimed-wood.jpg) no-repeat no-repeat fixed;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(../images/portfolio-pic.jpeg) no-repeat no-repeat fixed;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(../images/portfolio-pic.jpeg) no-repeat no-repeat fixed;
     height: 100vh;
     width: 100%;
     float: right;
@@ -379,8 +380,8 @@ button:focus, button:active, button.active, button:focus:active {
   height: 100vh;
   border-bottom: 2px solid #C3AC91;
   width: 100%;
-  background: -webkit-linear-gradient(left, rgba(216, 216, 216, 0.9), rgba(216, 216, 216, 0.9)), url(../images/wood-wallpaper-6.jpg) no-repeat no-repeat fixed;
-  background: linear-gradient(to right, rgba(216, 216, 216, 0.9), rgba(216, 216, 216, 0.9)), url(../images/wood-wallpaper-6.jpg) no-repeat no-repeat fixed;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/wood-tools.jpg) no-repeat no-repeat fixed;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/wood-tools.jpg) no-repeat no-repeat fixed;
   background-attachment: fixed !important;
   background-size: cover !important; }
   .banner h2 {
@@ -388,8 +389,9 @@ button:focus, button:active, button.active, button:focus:active {
     color: #BB6B0C;
     font-family: 'Josefin Slab', serif; }
   .banner .contact-wrapper {
+    background-color: #C3AC91;
     width: 100%;
-    height: 25%;
+    float: bottom;
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
@@ -406,7 +408,7 @@ button:focus, button:active, button.active, button:focus:active {
         -webkit-transition: ease .3s;
         transition: ease .3s; }
   .banner .name {
-    color: #C3AC91;
+    color: #595959;
     margin: 1%;
     font-size: 4vmax; }
   .banner .self-title {
@@ -481,7 +483,7 @@ button:focus, button:active, button.active, button:focus:active {
     font-size: 21px; } }
 @media (max-width: 600px) {
   .banner {
-    background: #595959; }
+    /* background: $background-color; */ }
     .banner .banner-wrapper .banner-pic-wrapper .banner-pic .pic {
       background-position-x: 70%;
       background-position-y: .5%; }
