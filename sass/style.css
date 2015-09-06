@@ -40,8 +40,7 @@ button:focus, button:active, button.active, button:focus:active {
     width: 65px;
     height: 65px;
     border-radius: 100%;
-    border: 1px solid #595959;
-    text-align: center; }
+    border: 1px solid #595959; }
     .scroll-button button:hover {
       background-color: tranparent;
       border: 1px solid #FF9828;
@@ -381,9 +380,7 @@ button:focus, button:active, button.active, button:focus:active {
   border-bottom: 2px solid #C3AC91;
   width: 100%;
   background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/wood-tools.jpg) no-repeat no-repeat fixed;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/wood-tools.jpg) no-repeat no-repeat fixed;
-  background-attachment: fixed !important;
-  background-size: cover !important; }
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/wood-tools.jpg) no-repeat no-repeat fixed; }
   .banner h2 {
     text-align: center;
     color: #BB6B0C;
@@ -483,10 +480,13 @@ button:focus, button:active, button.active, button:focus:active {
     font-size: 21px; } }
 @media (max-width: 600px) {
   .banner {
-    /* background: $background-color; */ }
+    background-size: 100% 10%; }
     .banner .banner-wrapper .banner-pic-wrapper .banner-pic .pic {
       background-position-x: center;
       background-position-y: .5%; }
+
+  .scroll-button {
+    font-size: 18px; }
 
   .photo-text-wrapper h1 {
     color: #595959; }
@@ -494,6 +494,7 @@ button:focus, button:active, button.active, button:focus:active {
   .about-me-wrapper .about-me-info {
     width: 100%;
     float: none;
+    -webkit-transition: all 2s;
     transition: all 2s; }
     .about-me-wrapper .about-me-info h2 {
       font-size: 18px; }
@@ -503,17 +504,20 @@ button:focus, button:active, button.active, button:focus:active {
     float: none;
     background: #B5B1AC;
     color: #595959;
+    -webkit-transition: all 2s;
     transition: all 2s; }
 
   .portfolio-wrapper .portfolio-info {
     width: 100%;
     float: none;
+    -webkit-transition: all 2s;
     transition: all 2s; }
   .portfolio-wrapper .portfolio-photo {
     width: 100%;
     min-height: 300px;
     float: none;
     background: #B5B1AC;
+    -webkit-transition: all 2s;
     transition: all 2s; }
 
   .project-wrapper {
@@ -534,6 +538,7 @@ button:focus, button:active, button.active, button:focus:active {
     width: 100%;
     min-height: 300px;
     float: none;
+    -webkit-transition: all 2s;
     transition: all 2s; }
     .experience-wrapper .experience-info .full-screen {
       margin-right: 5%; }
@@ -542,6 +547,7 @@ button:focus, button:active, button.active, button:focus:active {
     min-height: 300px;
     float: none;
     background: #B5B1AC;
+    -webkit-transition: all 2s;
     transition: all 2s; } }
 * {
   box-sizing: border-box; }
