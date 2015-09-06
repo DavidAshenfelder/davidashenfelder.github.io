@@ -380,7 +380,9 @@ button:focus, button:active, button.active, button:focus:active {
   border-bottom: 2px solid #C3AC91;
   width: 100%;
   background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/wood-tools.jpg) no-repeat no-repeat fixed;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/wood-tools.jpg) no-repeat no-repeat fixed; }
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/wood-tools.jpg) no-repeat no-repeat fixed;
+  background-attachment: fixed !important;
+  background-size: cover; }
   .banner h2 {
     text-align: center;
     color: #BB6B0C;
