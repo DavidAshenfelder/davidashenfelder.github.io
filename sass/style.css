@@ -488,6 +488,9 @@ button:focus, button:active, button.active, button:focus:active {
   .scroll-button {
     font-size: 18px; }
 
+  #top-button .fa-angle-double-up {
+    font-size: 32px; }
+
   .photo-text-wrapper h1 {
     color: #595959; }
 
