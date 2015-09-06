@@ -11,12 +11,11 @@
     border-bottom-right-radius: 5px;
     opacity: .3;
     &:hover {
-      opacity: 1;
-      background-color: $light-grey;
-      color: $grey-font;
-      li {
-        background-color: $light-grey;
-      }
+      opacity: .7;
+      border-right-color: $light-orange;
+      border-bottom-color: $light-orange;
+      color: $light-orange;
+      transition: ease .5s;
     }
   }
 }

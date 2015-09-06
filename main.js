@@ -58,7 +58,8 @@ page.disableLinks();
 // this is the button that pulls down the navigation bar if you have scrolled and it is hidden//
   navDropDown: function () {
     $('body').on('click','.nav-show-button button' ,function(event) {
-      $('.navbar').removeClass('hide');
+      $('.navbar').removeClass('slideOutUp');
+      $('.navbar').addClass('slideInDown');
       $('.nav-show-button').addClass('hide');
       $('.nav-collapse-button').removeClass('hide')
     })
@@ -67,7 +68,8 @@ page.disableLinks();
 // on window scroll the nav bar will disappear to give a full page view//
   navCollapse: function() {
     $(window).scroll(function() {
-    $('.navbar').addClass('hide');
+    $('.navbar').addClass('slideOutUp');
+    $('.navbar').removeClass('slideInDown');
     $('.nav-show-button').removeClass('hide');
     $('.nav-collapse-button').addClass('hide');
     })
@@ -77,9 +79,9 @@ page.disableLinks();
   navShow: function() {
     $(window).scroll(function() {
       var scrollLocation = window.pageYOffset;
-      var homePos = $('#home').position()
-      if (homePos.top <= -5) {
-        $('.navbar').removeClass('hide');
+      if (scrollLocation <= 0) {
+        $('.navbar').removeClass('slideOutUp');
+        $('.navbar').addClass('slideInDown');
         $('.nav-show-button').addClass('hide');
         $('.nav-collapse-button').removeClass('hide');
       }
@@ -91,9 +93,9 @@ page.disableLinks();
     $(window).scroll(function() {
       var bottomPage = window.innerHeight * 5;
 
-      var homePos = $('#home').position()
+      var scrollLocation = window.pageYOffset;
       var width = $('body').width()
-      if (homePos.top >= bottomPage + 300) {
+      if (scrollLocation >= bottomPage + 300) {
         $('#scroll-button').addClass('hide');
         $('#top-button').removeClass('hide');
       } else { // this shows the go to top button if you are at bottom of page.
