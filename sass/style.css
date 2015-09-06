@@ -485,7 +485,7 @@ button:focus, button:active, button.active, button:focus:active {
   .banner {
     /* background: $background-color; */ }
     .banner .banner-wrapper .banner-pic-wrapper .banner-pic .pic {
-      background-position-x: 70%;
+      background-position-x: center;
       background-position-y: .5%; }
 
   .photo-text-wrapper h1 {
@@ -494,8 +494,9 @@ button:focus, button:active, button.active, button:focus:active {
   .about-me-wrapper .about-me-info {
     width: 100%;
     float: none;
-    transition: all 2s;
-    font-size: 20px; }
+    transition: all 2s; }
+    .about-me-wrapper .about-me-info h2 {
+      font-size: 18px; }
   .about-me-wrapper .about-me-photo {
     width: 100%;
     min-height: 300px;

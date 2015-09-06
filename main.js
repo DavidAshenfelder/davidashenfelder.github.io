@@ -107,7 +107,7 @@ page.disableLinks();
 // Scrolls to top of page based on #home-page
   scrollToTop: function() {
     $('html, body').on('click', '#top-button', function() {
-      $('html, body').animate({ scrollTop: $('#home-page').offset().top}, 4000);
+      $('html, body').animate({ scrollTop: $('#home-page').offset().top}, 3000);
     })
   },
 
