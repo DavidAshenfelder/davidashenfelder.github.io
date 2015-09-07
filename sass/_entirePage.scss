@@ -228,24 +228,27 @@ button:focus, button:active, button.active, button:focus:active {
 }
 
 .project-wrapper {
-  border-top-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  background-color: $tan;
-  border: 2px solid $background-color;
-  margin: 7px;
-  padding: 6px;
+  background-color: $grey-font;
+  border: 1px solid $background-color;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 2px;
   -webkit-transition: all 2s;
           transition: all 2s;
   font-size: 1.5vmax;
-  height: 30vh;
-  h3 {
+  height: 29vh;
+  h3, h4 {
     margin: 0;
   }
   .github, .link {
     color: $background-color;
+    border: 1px solid $background-color;
+    padding: 3px;
+    box-shadow: 1px 1px 1px;
     &:hover {
       cursor: pointer;
-      color: $orange-font;
+      color: $light-orange;
+      border-color: $light-orange;
       -webkit-transition: ease .5s;
               transition: ease .5s;
     }
@@ -255,8 +258,12 @@ button:focus, button:active, button.active, button:focus:active {
     float: right;
     width: 49%;
     height: 100%;
-    h3, p {
+   p {
       font-size: 20px;
+      width: 90%;
+    }
+    h3 {
+      font-size: 28px;
       width: 90%;
     }
   }
@@ -283,8 +290,9 @@ button:focus, button:active, button.active, button:focus:active {
       border: 2px solid $background-color;
       width: 100%;
       max-height: 29vh;
+      box-shadow: 2px 2px 2px $background-color;
       &:hover {
-        border: 3px solid $orange-font;
+        border: 2px solid $light-orange;
         -webkit-transition: ease 1s;
                 transition: ease 1s;
       }

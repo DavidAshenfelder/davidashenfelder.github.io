@@ -83,12 +83,16 @@ background-color: $grey-font;
 }
 
 @media (max-width: 600px) {
-  .resume-content {
-    .inline-block {
+    .resume-wrapper {
       width: 100%;
     }
+    .resume-content {
+      .inline-block {
+        width: 100%;
+      }
+    }
   }
-}
+
 .category-heading {
   font-size: 24px;
   font-weight: bolder;

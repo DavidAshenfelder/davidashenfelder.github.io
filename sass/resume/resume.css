@@ -58,6 +58,9 @@ body {
     width: 49%; }
 
 @media (max-width: 600px) {
+  .resume-wrapper {
+    width: 100%; }
+
   .resume-content .inline-block {
     width: 100%; } }
 .category-heading {

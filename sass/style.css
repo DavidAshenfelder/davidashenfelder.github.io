@@ -198,31 +198,37 @@ button:focus, button:active, button.active, button:focus:active {
     transition: all 2s; }
 
 .project-wrapper {
-  border-top-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  background-color: #C3AC91;
-  border: 2px solid #595959;
-  margin: 7px;
-  padding: 6px;
+  background-color: #B5B1AC;
+  border: 1px solid #595959;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 2px;
   -webkit-transition: all 2s;
   transition: all 2s;
   font-size: 1.5vmax;
-  height: 30vh; }
-  .project-wrapper h3 {
+  height: 29vh; }
+  .project-wrapper h3, .project-wrapper h4 {
     margin: 0; }
   .project-wrapper .github, .project-wrapper .link {
-    color: #595959; }
+    color: #595959;
+    border: 1px solid #595959;
+    padding: 3px;
+    box-shadow: 1px 1px 1px; }
     .project-wrapper .github:hover, .project-wrapper .link:hover {
       cursor: pointer;
-      color: #BB6B0C;
+      color: #FF9828;
+      border-color: #FF9828;
       -webkit-transition: ease .5s;
       transition: ease .5s; }
   .project-wrapper .project-info {
     float: right;
     width: 49%;
     height: 100%; }
-    .project-wrapper .project-info h3, .project-wrapper .project-info p {
+    .project-wrapper .project-info p {
       font-size: 20px;
+      width: 90%; }
+    .project-wrapper .project-info h3 {
+      font-size: 28px;
       width: 90%; }
   .project-wrapper .project-pic {
     float: left;
@@ -245,9 +251,10 @@ button:focus, button:active, button.active, button:focus:active {
     .project-wrapper .project-pic img {
       border: 2px solid #595959;
       width: 100%;
-      max-height: 29vh; }
+      max-height: 29vh;
+      box-shadow: 2px 2px 2px #595959; }
       .project-wrapper .project-pic img:hover {
-        border: 3px solid #BB6B0C;
+        border: 2px solid #FF9828;
         -webkit-transition: ease 1s;
         transition: ease 1s; }
 
@@ -508,6 +515,8 @@ button:focus, button:active, button.active, button:focus:active {
 @media (max-width: 600px) {
   .banner {
     background-size: 100% 10%; }
+    .banner .banner-pic-wrapper {
+      transform: scale(0.5); }
     .banner .banner-wrapper .banner-pic-wrapper .banner-pic .pic {
       background-position-x: center;
       background-position-y: .005%; }
@@ -528,41 +537,55 @@ button:focus, button:active, button.active, button:focus:active {
     transition: all 2s; }
     .about-me-wrapper .about-me-info h2 {
       font-size: 18px; }
+    .about-me-wrapper .about-me-info #build-a-purpose {
+      font-size: 32px; }
+    .about-me-wrapper .about-me-info .about-me-body-wrapper {
+      width: 100%; }
   .about-me-wrapper .about-me-photo {
     width: 100%;
     min-height: 300px;
     float: none;
-    background: #B5B1AC;
+    background: #f4f4f4;
     color: #595959;
     -webkit-transition: all 2s;
     transition: all 2s; }
 
-  .portfolio-wrapper .portfolio-info {
-    width: 100%;
-    float: none;
-    -webkit-transition: all 2s;
-    transition: all 2s; }
-  .portfolio-wrapper .portfolio-photo {
-    width: 100%;
-    min-height: 300px;
-    float: none;
-    background: #B5B1AC;
-    -webkit-transition: all 2s;
-    transition: all 2s; }
+  .portfolio-wrapper {
+    height: 300vh; }
+    .portfolio-wrapper .portfolio-info {
+      width: 100%;
+      height: 200vh;
+      float: none;
+      -webkit-transition: all 2s;
+      transition: all 2s; }
+    .portfolio-wrapper .portfolio-photo {
+      width: 100%;
+      min-height: 300px;
+      float: none;
+      background: #f4f4f4;
+      -webkit-transition: all 2s;
+      transition: all 2s; }
 
   .project-wrapper {
-    padding: 1%; }
-    .project-wrapper .project-info h3, .project-wrapper .project-info p {
-      width: 90%;
-      font-size: 2.2vmax; }
-    .project-wrapper .project-pic {
-      height: 100%; }
-      .project-wrapper .project-pic a {
+    padding: 1%;
+    height: 60vh; }
+    .project-wrapper .project-info {
+      width: 100%;
+      height: 50%;
+      display: inline-block; }
+      .project-wrapper .project-info h3, .project-wrapper .project-info p, .project-wrapper .project-info h4 {
         width: 90%;
-        height: 100%; }
+        font-size: 2.2vmax;
+        margin: 3%; }
+      .project-wrapper .project-info h3 {
+        font-size: 24px; }
+    .project-wrapper .project-pic {
+      width: 100%;
+      height: 50%; }
+      .project-wrapper .project-pic a {
+        width: 90%; }
       .project-wrapper .project-pic img {
-        border: 2px solid #595959;
-        height: 100%; }
+        border: 2px solid #595959; }
 
   .experience-wrapper .experience-info {
     width: 100%;
@@ -576,7 +599,7 @@ button:focus, button:active, button.active, button:focus:active {
     width: 100%;
     min-height: 300px;
     float: none;
-    background: #B5B1AC;
+    background: #f4f4f4;
     -webkit-transition: all 2s;
     transition: all 2s; } }
 * {
