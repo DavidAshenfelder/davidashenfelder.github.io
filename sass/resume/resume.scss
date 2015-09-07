@@ -60,6 +60,7 @@ background-color: $grey-font;
     margin: 1%;
     .button {
       float: right;
+      margin-right: 5px;
       button {
         border-radius: 3px;
         width: 100%;
@@ -85,6 +86,9 @@ background-color: $grey-font;
 @media (max-width: 600px) {
     .resume-wrapper {
       width: 100%;
+    }
+    .button-wrapper {
+      text-align: center;
     }
     .resume-content {
       .inline-block {

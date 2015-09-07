@@ -516,7 +516,9 @@ button:focus, button:active, button.active, button:focus:active {
   .banner {
     background-size: 100% 10%; }
     .banner .banner-pic-wrapper {
-      transform: scale(0.5); }
+      -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+      transform: scale(0.7); }
     .banner .banner-wrapper .banner-pic-wrapper .banner-pic .pic {
       background-position-x: center;
       background-position-y: .005%; }

@@ -42,7 +42,8 @@ body {
     width: 100%;
     margin: 1%; }
     .header .button-wrapper .button {
-      float: right; }
+      float: right;
+      margin-right: 5px; }
       .header .button-wrapper .button button {
         border-radius: 3px;
         width: 100%; }
@@ -60,6 +61,9 @@ body {
 @media (max-width: 600px) {
   .resume-wrapper {
     width: 100%; }
+
+  .button-wrapper {
+    text-align: center; }
 
   .resume-content .inline-block {
     width: 100%; } }

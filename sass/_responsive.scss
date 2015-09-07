@@ -32,7 +32,9 @@
   .banner{
     background-size: 100% 10%;
     .banner-pic-wrapper {
-      transform: scale(.5);
+      -webkit-transform: scale(.7);
+          -ms-transform: scale(.7);
+              transform: scale(.7);
     }
     .banner-wrapper .banner-pic-wrapper .banner-pic .pic {
       background-position-x: center;
